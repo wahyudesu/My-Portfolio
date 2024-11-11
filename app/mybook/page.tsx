@@ -53,12 +53,12 @@ export default function MyBook() {
       <h1 className="font-semibold text-5xl md:text-6xl mb-8 tracking-tighter">
         My Book Collection
       </h1>
-      <p className="mb-4">
+      <p className="">
         Explore my favorite books that have shaped my perspective and inspired my journey.
       </p>
 
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="container mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-5 mt-px place-items-center place-content-cente">
           {books.map((book, index) => (
             <div
               key={index}
@@ -69,7 +69,7 @@ export default function MyBook() {
               <img
                 src={book.cover}
                 alt={`Cover of ${book.title}`}
-                className="h-60 max-w-full object-contain"
+                className="h-48 sm:h-56 md:h-60 max-w-full object-contain"
               />
               <div className="text-center mt-2">
                 <h3 className="font-semibold text-lg">{book.title}</h3>
