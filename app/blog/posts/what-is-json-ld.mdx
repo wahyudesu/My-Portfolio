@@ -1,0 +1,49 @@
+---
+title: "What is JSON-LD?"
+publishedAt: "2024-10-23"
+summary: "I found out about JSON-LD and thought I'd write about it, it's pretty cool!"
+---
+
+I was on the Train editing my portfolio wondering how I could optimise SEO, and stumbled across JSON-LD.
+Normally I see it used in the context of products so that google can pick up information from websites
+to then add it to their 'shopping' tab etc. I found that I can include it here though! My schema has defined
+'Jake Mackie' as a person, so google _should_ crawl me.. as weird as that sounds lol.
+
+So I defined a person type that I can give to the schema.
+
+```ts
+export interface Person {
+  "@context": string;
+  "@type": string;
+  name: string;
+  description: string;
+  birthDate: string;
+}
+```
+
+...along with `me.json` to match those types I've defined.
+
+```json
+{
+  "name": "Jake Mackie",
+  "description": "Jake Mackie is a 19-year-old apprentice fullstack developer for Hiyield based in Cornwall.",
+  "birthDate": "2005-08-04"
+}
+```
+
+Then, on a page we can use both to pass the valid JSON-LD data!
+
+```tsx
+import { Person } from "app/types/personType";
+import Me from "app/json/me.json";
+
+const jsonLd: Person = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  ...Me,
+};
+```
+
+So when the `/about` page gets indexed, the JSON-LD defines me as a person! This means that the search term
+'Jake Mackie' when looking for JSON-LD data to match - should fine mine within this site, boosting my identity
+in SEO rankings.

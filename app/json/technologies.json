@@ -1,0 +1,50 @@
+[
+  {
+    "icon": "icons/figma.svg",
+    "highlight": "bg-red-300/20",
+    "name": "Figma",
+    "type": "Design Software"
+  },
+  {
+    "icon": "icons/typescript.svg",
+    "highlight": "bg-blue-300/20",
+    "name": "TypeScript",
+    "type": "Language"
+  },
+  {
+    "icon": "icons/react.svg",
+    "highlight": "bg-sky-300/20",
+    "name": "React",
+    "type": "Frontend Library"
+  },
+  {
+    "icon": "icons/nextjs.svg",
+    "highlight": "bg-slate-400/20",
+    "name": "Next",
+    "type": "Fullstack Framework"
+  },
+  {
+    "icon": "icons/tailwindcss.svg",
+    "highlight": "bg-cyan-300/20",
+    "name": "Tailwind",
+    "type": "CSS Framework"
+  },
+  {
+    "icon": "icons/git.svg",
+    "highlight": "bg-red-400/20",
+    "name": "Git",
+    "type": "Version Control"
+  },
+  {
+    "icon": "icons/python.svg",
+    "highlight": "bg-yellow-300/20",
+    "name": "Python",
+    "type": "Language"
+  },
+  {
+    "icon": "icons/tableau.svg",
+    "highlight": "bg-slate-400/20",
+    "name": "Tableau",
+    "type": "Data Visualization"
+  }
+]

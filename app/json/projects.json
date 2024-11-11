@@ -1,0 +1,97 @@
+[
+  {
+    "slug": "caption-ed",
+    "name": "Caption Ed",
+    "blurImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAKCAMAAABlokWQAAAAb1BMVEX////7/Pw4b2/3+fnQ5eXk6+zN4+L+/v7X5+fs7OwubGvp8/P29vbd6utAcXDw7++yzs4mY2Gcub/N0erk7/DE3d2609PX2fLx9PSMr6/j4/S5yODBzOShwMvd3fry8Pjg4ODQ2+XMzMzl5vc0ZmSDvSoDAAAAgElEQVQI11XIxwHDIAwAQAlhhCgxBveatv+MIfnlngdam8EYE5vXepZjOgvoWkZb3z/Kvm37VCBaO6Q06uxU5fIEvu9NGke7dG/nVJdXQCJvo52XTn3nEGCGOHiCrG6VSi1U5JEhND8kNVAoPEnuFLhFEEDmgChIMyIT17kI/sgH+sMG4fkgdZgAAAAASUVORK5CYII=",
+    "image": "/caption-ed.png",
+    "description": "Caption-Ed is one of my favourite projects I’ve been a part of so far. It’s a pretty site that highlights all the key values of the software. I was responsible for building various customisable blocks for the site's theme that could both get and set data in the WordPress backend.",
+    "technologies": [
+      "Figma",
+      "WordPress",
+      "PHP",
+      "JavaScript",
+      "Tailwind",
+      "Git"
+    ],
+    "url": "https://caption-ed.com",
+    "publishedAt": "2024-10-23"
+  },
+  {
+    "slug": "together-for-the-ocean",
+    "name": "Together for the Ocean",
+    "blurImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAKCAMAAABlokWQAAAAjVBMVEUAT8kAT8oBUMkJVsoHTrsRW80FUspbj91jlN4ojLAKUb49d4hsmeApa9IZYM5Vi9xznuEUV653oeIygqMQTqh9puQgZdFjmp4EgL0ja7Ngi85HXI6JalFBfNcAjMWNseeHqNl+cVhvl9VMhNmBeXk2b8JPhdo6bqcCUMd+lrFPgHCHgXFYrJ8QZa9xfX9WY7eVAAAAgElEQVQI1z3OVw7CQAxFUZd4SmbSO7132P/yCBPgfllHepIhSRWMITADMjsHwvSRobP9cyiAYpi6dI9V724WcBIWOVfW3rcVYBQk8eVuc30dFnP8Ci0b0xzruoj/ItqYFsd+KyWSthzOURSRIlAcviKgCHJfrnNtvD7ts0xrM3sDQgsGR5VbXj4AAAAASUVORK5CYII=",
+    "image": "/together-for-the-ocean.png",
+    "description": "Together for the ocean was great fun to help build. They have a strong brand which I helped convey with some frontend work such as the footer and other blocks.",
+    "technologies": [
+      "Figma",
+      "WordPress",
+      "PHP",
+      "JavaScript",
+      "Tailwind",
+      "Git"
+    ],
+    "url": "https://for-the-ocean.org/",
+    "publishedAt": "2024-10-23"
+  },
+  {
+    "slug": "portfolio",
+    "name": "Portfolio",
+    "blurImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAKBAMAAABLZROSAAAAD1BMVEUTExMcHB0XFxgjJikzNzr+6pfVAAAAOElEQVQI12NgYGBQAmIGRiBmMnFUgLAYBIVgLCGYLIOgkhKGrKASTFZYCKiSCcQyFIaymIxFQCwAiusCz4F6xhsAAAAASUVORK5CYII=",
+    "image": "/portfolio.png",
+    "description": "My personal portfolio.",
+    "technologies": ["Next", "React", "TypeScript", "Tailwind", "Git"],
+    "url": "https://jakemackie.co.uk",
+    "publishedAt": "2024-10-23"
+  },
+  {
+    "slug": "breakthrough-agenda",
+    "name": "Breakthrough Agenda",
+    "blurImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAKCAMAAABlokWQAAAAnFBMVEUADHgTJYEGE3yprdFghaektLaoubsTIn6or6YHE3ICDnNdgKKdp6QeLIhmi6qVqrBPVU2rs6iEpbULG4GBobGKp7WPq7hrja2ip8s7QGKZo5x7m6xXZaiWmZI1QJEHJ4mbsLWJj4l8nrCprdIpMXVKUEcNGXtvdq4EEXo4SpZ7map8grYrNYsGEnuAhXhkb5aEir5rcWiOm6p9iaXD9Q/3AAAAg0lEQVQI1zXIBw6DMBQD0F8amgQyCGSwV/de979baWifbFkyYIyP9eKHT4U4jhGagpAQwjknoDpV46i1TtPUGGutASll34dfKy+EsiwZI0QpRQhhr/cdtknyHIamuSVFscG7QwSU0va8v3Acgecn4zyAv/npugCuwYz6P2vrR7701vkHZlkJUTLOD8wAAAAASUVORK5CYII=",
+    "image": "/breakthrough-agenda.png",
+    "description": "No description",
+    "technologies": [
+      "Figma",
+      "WordPress",
+      "PHP",
+      "JavaScript",
+      "Tailwind",
+      "Git"
+    ],
+    "url": "https://breakthroughagenda.org/",
+    "publishedAt": "2024-10-24"
+  },
+  {
+    "slug": "mintmech",
+    "name": "Mintmech",
+    "blurImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAKCAMAAABlokWQAAAARVBMVEUAAAAGBgYCAwMKCgoPDg4UFBUZGR0jHh5cWlk9PD0uKy82NTVIMj9gR1VQTU5sbGxQPT+FhYVEIBaFQEV8fHyQgXmYZmW8y6niAAAAbUlEQVQI1y2OSRbDMAhDDcgGz0mb9P5HrU0CG+k/MQRw2EWqkMAUs1sm4mpWEiBwUqfRuO7eQCROxnlaHb/eIzM5yTZnOb6t4SHM+gE0H0XlIYQoa16EmN/M0m9tuddIrrq9YKf9u5Sid1rXyx8mQQMFvENbvAAAAABJRU5ErkJggg==",
+    "image": "/mintmech.png",
+    "description": "Mintmech's design was an interesting challenge. I worked with the topography backgrounds and other design elements to create a unique look across multiple pages on the site.",
+    "technologies": [
+      "Figma",
+      "WordPress",
+      "PHP",
+      "JavaScript",
+      "Tailwind",
+      "Git"
+    ],
+    "url": "https://mintmech.com/",
+    "publishedAt": "2024-10-24"
+  },
+  {
+    "slug": "1energy",
+    "name": "1energy",
+    "blurImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAKCAMAAABlokWQAAAAP1BMVEUCKScILSoFKikKNDAKMSwYOjYWLS8zP0MuRkQuOD8XMzJEREpPU1hSXV1va24uMjeJenuilpSRfYCLgYE3MzeKAn1kAAAAYklEQVQI11WNSxbAIAgDAbWI2trf/c/aSNuFs2AxeQnEIPqJIURAAkJKqSygaFY3GWg362tTIxJe1mymtV3nXm91g4pp2/bj2GolRwTTpWBOxAW+ME0MI/zFv4mzCWkYfpsPOEQCymasW7MAAAAASUVORK5CYII=",
+    "image": "/1energy.png",
+    "description": "For this project I worked on loading lottie animations into the WordPress theme, as they aren't natively supported. I also worked on the design of footer and other frontend areas.",
+    "technologies": [
+      "Figma",
+      "WordPress",
+      "PHP",
+      "JavaScript",
+      "Tailwind",
+      "Git"
+    ],
+    "url": "https://1energy.uk/",
+    "publishedAt": "2024-10-24"
+  }
+]
