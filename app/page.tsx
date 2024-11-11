@@ -4,12 +4,10 @@ import DotPattern from "app/components/ui/dot-pattern";
 import { cn } from "lib/utils";
 import { baseUrl } from "./sitemap";
 import Aos from "app/components/aos";
-import { ThemeProvider } from "next-themes";
 
 export default function Page() {
   return (
-    <ThemeProvider attribute="class" defaultTheme="light">
-      <div>
+      <div className="bg-white text-black">
         <div className="h-[calc(100vh-15rem)] flex flex-col justify-center">
           <h1 className="mb-2 text-6xl sm:text-7xl font-semibold tracking-tighter text-center">
             Wahyu Ikbal Maulana
@@ -111,6 +109,5 @@ export default function Page() {
           )}
         />
       </div>
-    </ThemeProvider>
   );
 }

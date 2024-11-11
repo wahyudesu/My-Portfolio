@@ -6,7 +6,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "./components/footer";
 import { baseUrl } from "./sitemap";
-import { Providers } from "app/components/providers";
+
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -59,13 +59,6 @@ const figtree = Figtree({ subsets: ["latin"], display: "swap" });
 
 const cx = (...classes) => classes.filter(Boolean).join(" ");
 
-export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
-  ],
-};
-
 export default function RootLayout({
   children,
 }: {
@@ -77,13 +70,11 @@ export default function RootLayout({
       className={cx("text-foreground bg-background", figtree.className)}
     >
       <body className="antialiased max-w-xl mx-4 mt-8 sm:mx-auto">
-        <Providers>
           <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0 leading-loose">
             <Navbar />
             {children}
             <Footer />
           </main>
-        </Providers>
         <Analytics />
         <SpeedInsights />
       </body>
