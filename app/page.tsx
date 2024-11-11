@@ -39,7 +39,7 @@ export default function Page() {
           <div className="flex flex-col gap-8">
             <div className="flex flex-col">
               <h3 className="text-xl lg:text-2xl font-semibold tracking-tighter mb-4">
-                Hiyield
+                Data Analyst
               </h3>
               <div className="h-full border-l-2 pl-4 border-zinc-600">
                 <p className="text-lg font-semibold tracking-tighter">
@@ -70,7 +70,7 @@ export default function Page() {
 
             <div className="flex flex-col">
               <h3 className="text-xl lg:text-2xl font-semibold tracking-tighter mb-4">
-                Cornwall IT Services (NHS)
+                Freelance Data Infographics
               </h3>
               <div className="h-full border-l-2 pl-4 border-zinc-600">
                 <p className="text-lg font-semibold tracking-tighter">2023</p>
