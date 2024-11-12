@@ -9,5 +9,7 @@ module.exports = {
     container:{center: true},
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    flowbite.plugin()
+  ],
 }

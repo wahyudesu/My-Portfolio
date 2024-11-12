@@ -6,7 +6,7 @@ const figtree = Figtree({ subsets: ["latin"], display: "swap" });
 export function GET(request: Request) {
   let url = new URL(request.url);
   let title =
-    url.searchParams.get("title") || "Jake Mackie — Fullstack Developer";
+    url.searchParams.get("title") || "Wahyu Ikbal — Data Scientist";
 
   return new ImageResponse(
     (

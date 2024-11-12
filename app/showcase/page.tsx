@@ -23,7 +23,7 @@ export default function Showcase() {
         are live and available for you to explore. Any in-development personal
         work can be found open-sourced on my{" "}
         <Link
-          href="https://github.com/jakemackie"
+          href="https://github.com/wahyudesu"
           target="_blank"
           className="text-blue-500 underline"
         >

@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
     default: "Wahyu Ikbal Maulana — Fullstack Developer",
-    template: "%s | Jake Mackie",
+    template: "%s | Wahyu Ikbal Maulana",
   },
   description: "19 year old apprentice fullstack developer based in Cornwall.",
   openGraph: {
     title: {
-      default: "Jake Mackie — Fullstack Developer",
-      template: "%s | Jake Mackie",
+      default: "Wahyu Ikbal Maulana — Fullstack Developer",
+      template: "%s | Wahyu Ikbal Maulana",
     },
     images: [
       {
@@ -27,15 +27,15 @@ export const metadata: Metadata = {
     description:
       "19 year old apprentice fullstack developer based in Cornwall, United Kingdom.",
     url: baseUrl,
-    siteName: "Jake Mackie",
+    siteName: "Wahyu Ikbal Maulana",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: {
-      default: "Jake Mackie — Fullstack Developer",
-      template: "%s | Jake Mackie",
+      default: "Wahyu Ikbal Maulana — Fullstack Developer",
+      template: "%s | Wahyu Ikbal Maulana",
     },
     description:
       "19 year old apprentice fullstack developer based in Cornwall, United Kingdom.",

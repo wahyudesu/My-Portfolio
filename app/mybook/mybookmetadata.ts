@@ -1,11 +1,10 @@
-// resumeMetadata.ts
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Resume",
+  title: "My Book",
   description:
-    "A summary of my educational background, experiences, and skills. Download my resume to learn more about my journey.",
+    "Explore my favorite books that have shaped my perspective and inspired my journey.",
   openGraph: {
-    title: "Resume",
+    title: "My Book",
   },
 };
