@@ -9,9 +9,13 @@ import Aos from "app/components/aos";
 
 export default function Page() {
   const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
+  const baseUrl = "YOUR_BASE_URL"; // Replace with your actual base URL
 
   // Function to toggle the modal visibility
   const toggleModal = () => setIsModalOpen(!isModalOpen);
+
+  // Close modal when clicking outside the modal content
+  const closeModal = () => setIsModalOpen(false);
 
   return (
     <div>
@@ -26,9 +30,9 @@ export default function Page() {
         <Link
           href="#"
           onClick={toggleModal} // Open modal when clicked
-          className={`mx-auto my-4 sm:my-6 group w-fit flex items-stretch bg-zinc-950 border border-neutral-700 
+          className="mx-auto my-4 sm:my-6 group w-fit flex items-stretch bg-zinc-950 border border-neutral-700 
             px-4 sm:px-6 py-2 rounded-xl hover:bg-zinc-900 hover:border-neutral-600 duration-200 
-            ease-in-out outline-2 outline-transparent focus:outline-blue-500 font-medium`}
+            ease-in-out outline-2 outline-transparent focus:outline-blue-500 font-medium"
           data-aos="zoom-out"
           data-aos-delay="150"
           data-aos-easing="ease-out-cubic"
@@ -44,7 +48,7 @@ export default function Page() {
           tabIndex={-1}
           aria-hidden={!isModalOpen}
           className="fixed inset-0 flex items-center justify-center z-50 overflow-y-auto bg-black bg-opacity-50"
-          onClick={() => setIsModalOpen(false)} // Close modal when clicked outside
+          onClick={closeModal} // Close modal when clicked outside
         >
           <div className="relative p-4 w-full max-w-sm max-h-full" onClick={(e) => e.stopPropagation()}>
             {/* Modal content */}
@@ -56,7 +60,7 @@ export default function Page() {
                 </h3>
                 <button
                   type="button"
-                  onClick={toggleModal} // Close the modal on click
+                  onClick={closeModal} // Close the modal on click
                   className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm h-8 w-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
                 >
                   <svg
@@ -91,8 +95,6 @@ export default function Page() {
                       Email Me
                     </a>
                   </li>
-                </ul>
-                <ul className="my-4 space-y-3">
                   <li>
                     <a
                       href="https://www.linkedin.com/in/wahyuikbalmaulana"
@@ -101,8 +103,6 @@ export default function Page() {
                       Connect Linkedin
                     </a>
                   </li>
-                </ul>
-                <ul className="my-4 space-y-3">
                   <li>
                     <a
                       href="https://www.instagram.com/@why_ikbal"
@@ -111,8 +111,6 @@ export default function Page() {
                       Follow Instagram
                     </a>
                   </li>
-                </ul>
-                <ul className="my-4 space-y-3">
                   <li>
                     <a
                       href="https://www.youtube.com/channel/your-channel"
@@ -121,8 +119,6 @@ export default function Page() {
                       Subscribe my YouTube
                     </a>
                   </li>
-                </ul>
-                <ul className="my-4 space-y-3">
                   <li>
                     <a
                       href="https://www.behance.net/your-profile"
@@ -137,6 +133,72 @@ export default function Page() {
           </div>
         </div>
       )}
+
+      <div className="space-y-8">
+        <h2 className="text-2xl lg:text-3xl font-semibold tracking-tighter text-center sm:text-left">
+          My experience
+        </h2>
+        <div className="flex flex-col gap-8">
+          <div className="flex flex-col">
+            <h3 className="text-xl lg:text-2xl font-semibold tracking-tighter mb-4">
+              Data Analyst
+            </h3>
+            <div className="h-full border-l-2 pl-4 border-zinc-600">
+              <p className="text-lg font-semibold tracking-tighter">
+                2024 - Current
+              </p>
+              <p className="text-neutral-400">
+                I am currently working at{" "}
+                <Link
+                  href="https://hiyield.co.uk/"
+                  target="_blank"
+                  className="text-blue-500 underline outline-2 outline-transparent focus:outline-blue-500"
+                >
+                  Hiyield
+                </Link>
+                , where I contribute to various real-world projects. You can
+                find these on the{" "}
+                <Link
+                  href={`${baseUrl}/showcase`}
+                  className="text-blue-500 underline outline-2 outline-transparent focus:outline-blue-500"
+                >
+                  showcase
+                </Link>{" "}
+                page, where I explain my involvement in each project and provide
+                a link to the live site.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-col">
+            <h3 className="text-xl lg:text-2xl font-semibold tracking-tighter mb-4">
+              Freelance Data Infographics
+            </h3>
+            <div className="h-full border-l-2 pl-4 border-zinc-600">
+              <p className="text-lg font-semibold tracking-tighter">2023</p>
+              <p className="text-neutral-400">
+                Work experience at{" "}
+                <Link
+                  href="https://cits.royalcornwallhospitals.nhs.uk/"
+                  target="_blank"
+                  className="text-blue-500 underline outline-2 outline-transparent focus:outline-blue-500"
+                >
+                  CITS
+                </Link>
+                . As a freelancer, I contributed to the company's data
+                visualization for hospital performance monitoring.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Technologies />
+      
+      <DotPattern
+        className={cn(
+          "-z-10 opacity-50 [mask-image:radial-gradient(300px_circle_at_center,white,transparent)]"
+        )}
+      />
     </div>
   );
 }
