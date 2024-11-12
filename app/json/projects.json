@@ -40,35 +40,33 @@
     "image": "/portfolio.png",
     "description": "My personal portfolio.",
     "technologies": ["Next", "React", "TypeScript", "Tailwind", "Git"],
-    "url": "https://jakemackie.co.uk",
+    "url": "https://whyikbal.vercel.app",
     "publishedAt": "2024-10-23"
   },
   {
-    "slug": "breakthrough-agenda",
-    "name": "Breakthrough Agenda",
+    "slug": "Pneumonia-Detection-Using-Chest-X-Ray-&-ML",
+    "name": "Pneumonia Detection Using Chest X-Ray & ML",
     "blurImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAKCAMAAABlokWQAAAAnFBMVEUADHgTJYEGE3yprdFghaektLaoubsTIn6or6YHE3ICDnNdgKKdp6QeLIhmi6qVqrBPVU2rs6iEpbULG4GBobGKp7WPq7hrja2ip8s7QGKZo5x7m6xXZaiWmZI1QJEHJ4mbsLWJj4l8nrCprdIpMXVKUEcNGXtvdq4EEXo4SpZ7map8grYrNYsGEnuAhXhkb5aEir5rcWiOm6p9iaXD9Q/3AAAAg0lEQVQI1zXIBw6DMBQD0F8amgQyCGSwV/de979baWifbFkyYIyP9eKHT4U4jhGagpAQwjknoDpV46i1TtPUGGutASll34dfKy+EsiwZI0QpRQhhr/cdtknyHIamuSVFscG7QwSU0va8v3Acgecn4zyAv/npugCuwYz6P2vrR7701vkHZlkJUTLOD8wAAAAASUVORK5CYII=",
     "image": "/breakthrough-agenda.png",
     "description": "No description",
     "technologies": [
-      "Figma",
+      "Computer Vision",
       "WordPress",
       "PHP",
-      "JavaScript",
-      "Tailwind",
-      "Git"
+      "JavaScript"
     ],
     "url": "https://breakthroughagenda.org/",
     "publishedAt": "2024-10-24"
   },
   {
-    "slug": "mintmech",
-    "name": "Mintmech",
+    "slug": "ARIMA-Analysis-Energy-in-Indonesia",
+    "name": "ARIMA Analysis Energy in Indonesia",
     "blurImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAKCAMAAABlokWQAAAARVBMVEUAAAAGBgYCAwMKCgoPDg4UFBUZGR0jHh5cWlk9PD0uKy82NTVIMj9gR1VQTU5sbGxQPT+FhYVEIBaFQEV8fHyQgXmYZmW8y6niAAAAbUlEQVQI1y2OSRbDMAhDDcgGz0mb9P5HrU0CG+k/MQRw2EWqkMAUs1sm4mpWEiBwUqfRuO7eQCROxnlaHb/eIzM5yTZnOb6t4SHM+gE0H0XlIYQoa16EmN/M0m9tuddIrrq9YKf9u5Sid1rXyx8mQQMFvENbvAAAAABJRU5ErkJggg==",
     "image": "/mintmech.png",
     "description": "Mintmech's design was an interesting challenge. I worked with the topography backgrounds and other design elements to create a unique look across multiple pages on the site.",
     "technologies": [
-      "Figma",
-      "WordPress",
+      "Data Analysis",
+      "Time Series",
       "PHP",
       "JavaScript",
       "Tailwind",
@@ -78,18 +76,15 @@
     "publishedAt": "2024-10-24"
   },
   {
-    "slug": "1energy",
-    "name": "1energy",
+    "slug": "CNN-Rock-.Scissor-Paper",
+    "name": "CNN Rock Scissor Paper",
     "blurImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAKCAMAAABlokWQAAAAP1BMVEUCKScILSoFKikKNDAKMSwYOjYWLS8zP0MuRkQuOD8XMzJEREpPU1hSXV1va24uMjeJenuilpSRfYCLgYE3MzeKAn1kAAAAYklEQVQI11WNSxbAIAgDAbWI2trf/c/aSNuFs2AxeQnEIPqJIURAAkJKqSygaFY3GWg362tTIxJe1mymtV3nXm91g4pp2/bj2GolRwTTpWBOxAW+ME0MI/zFv4mzCWkYfpsPOEQCymasW7MAAAAASUVORK5CYII=",
     "image": "/1energy.png",
     "description": "For this project I worked on loading lottie animations into the WordPress theme, as they aren't natively supported. I also worked on the design of footer and other frontend areas.",
     "technologies": [
-      "Figma",
+      "Computer Vision",
       "WordPress",
-      "PHP",
-      "JavaScript",
-      "Tailwind",
-      "Git"
+      "PHP"
     ],
     "url": "https://1energy.uk/",
     "publishedAt": "2024-10-24"
