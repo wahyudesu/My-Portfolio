@@ -38,7 +38,7 @@ export default function Page() {
           data-aos-easing="ease-out-cubic"
           data-aos-duration="300"
         >
-          Contact me
+          Connect with me
         </Link>
       </div>
 
