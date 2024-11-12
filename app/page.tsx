@@ -9,13 +9,16 @@ import Aos from "app/components/aos";
 
 export default function Page() {
   const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
-  const baseUrl = "YOUR_BASE_URL"; // Replace with your actual base URL
+  const [isPopoverVisible, setIsPopoverVisible] = useState(false); // State for popover visibility
+  const baseUrl = "https://whyikbal.vercel.app"; // Base URL for project showcase
 
-  // Function to toggle the modal visibility
+  // Toggle modal visibility
   const toggleModal = () => setIsModalOpen(!isModalOpen);
-
-  // Close modal when clicking outside the modal content
   const closeModal = () => setIsModalOpen(false);
+
+  // Popover visibility functions
+  const showPopover = () => setIsPopoverVisible(true);
+  const hidePopover = () => setIsPopoverVisible(false);
 
   return (
     <div>
@@ -51,13 +54,10 @@ export default function Page() {
           onClick={closeModal} // Close modal when clicked outside
         >
           <div className="relative p-4 w-full max-w-sm max-h-full" onClick={(e) => e.stopPropagation()}>
-            {/* Modal content */}
             <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
               {/* Modal header */}
               <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                  Connect With Me
-                </h3>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Connect With Me</h3>
                 <button
                   type="button"
                   onClick={closeModal} // Close the modal on click
@@ -96,12 +96,70 @@ export default function Page() {
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="https://www.linkedin.com/in/wahyuikbalmaulana"
-                      className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
-                    >
-                      Connect Linkedin
-                    </a>
+                    <div className="relative">
+                      <a
+                        href="https://www.linkedin.com/in/wahyuikbalmaulana"
+                        onMouseEnter={showPopover}
+                        onMouseLeave={hidePopover}
+                        className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300"
+                      >
+                        Connect Linkedin
+                      </a>
+
+                      {/* Popover */}
+                      {isPopoverVisible && (
+                        <div
+                          className="absolute z-10 p-3 inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600"
+                          // className="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600"
+                          style={{ top: "100%", left: 0 }}
+                        >
+                          <div className="flex items-center justify-between mb-2">
+                            <a href="#">
+                              <img
+                                className="w-10 h-10 rounded-full"
+                                src="/docs/images/people/profile-picture-1.jpg"
+                                alt="User Profile"
+                              />
+                            </a>
+                            <div>
+                              <button
+                                type="button"
+                                className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-xs px-3 py-1.5 dark:bg-blue-600 dark:hover:bg-blue-700"
+                              >
+                                Follow
+                              </button>
+                            </div>
+                          </div>
+                          <p className="text-base font-semibold text-gray-900 dark:text-white">
+                            <a href="#">Jese Leos</a>
+                          </p>
+                          <p className="text-sm font-normal mb-3">
+                            <a href="#" className="hover:underline">@jeseleos</a>
+                          </p>
+                          <p className="mb-4 text-sm">
+                            Open-source contributor. Building{" "}
+                            <a href="#" className="text-blue-600 dark:text-blue-500 hover:underline">
+                              flowbite.com
+                            </a>
+                            .
+                          </p>
+                          <ul className="flex text-sm">
+                            <li className="mr-2">
+                              <a href="#" className="hover:underline">
+                                <span className="font-semibold text-gray-900 dark:text-white">799</span>
+                                <span>Following</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" className="hover:underline">
+                                <span className="font-semibold text-gray-900 dark:text-white">3,758</span>
+                                <span>Followers</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      )}
+                    </div>
                   </li>
                   <li>
                     <a
@@ -133,15 +191,14 @@ export default function Page() {
           </div>
         </div>
       )}
-
-      <div className="space-y-8">
+<div className="space-y-8">
         <h2 className="text-2xl lg:text-3xl font-semibold tracking-tighter text-center sm:text-left">
           My experience
         </h2>
         <div className="flex flex-col gap-8">
           <div className="flex flex-col">
             <h3 className="text-xl lg:text-2xl font-semibold tracking-tighter mb-4">
-              Data Analyst
+              Hiyield
             </h3>
             <div className="h-full border-l-2 pl-4 border-zinc-600">
               <p className="text-lg font-semibold tracking-tighter">
@@ -156,7 +213,7 @@ export default function Page() {
                 >
                   Hiyield
                 </Link>
-                , where I contribute to various real-world projects. You can
+                {","} where I contribute to various real-world projects. You can
                 find these on the{" "}
                 <Link
                   href={`${baseUrl}/showcase`}
@@ -164,7 +221,7 @@ export default function Page() {
                 >
                   showcase
                 </Link>{" "}
-                page, where I explain my involvement in each project and provide
+                page. Where I explain my involvement in each project and provide
                 a link to the live site.
               </p>
             </div>
@@ -172,7 +229,7 @@ export default function Page() {
 
           <div className="flex flex-col">
             <h3 className="text-xl lg:text-2xl font-semibold tracking-tighter mb-4">
-              Freelance Data Infographics
+              Cornwall IT Services (NHS)
             </h3>
             <div className="h-full border-l-2 pl-4 border-zinc-600">
               <p className="text-lg font-semibold tracking-tighter">2023</p>
@@ -185,20 +242,32 @@ export default function Page() {
                 >
                   CITS
                 </Link>
-                . As a freelancer, I contributed to the company's data
-                visualization for hospital performance monitoring.
+                {" (NHS), "} where I made JavaScript assesments for patients,
+                conforming to the NHS design system.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <Technologies />
-      
-      <DotPattern
-        className={cn(
-          "-z-10 opacity-50 [mask-image:radial-gradient(300px_circle_at_center,white,transparent)]"
-        )}
-      />
+
+      <div className="space-y-8">
+        <div className="flex flex-col gap-8">
+          <div className="flex flex-col">
+            <div className="mt-10 lg:mt-10">
+            <h2 className="text-2xl lg:text-3xl font-semibold tracking-tighter text-center sm:text-left">
+              Skills - Tools
+            </h2>
+            <p className="mt-2 text-neutral-400 text-center sm:text-left">
+              <span className="inline-block sm:hidden">Tap</span>
+              <span className="hidden sm:inline-block">Hover</span> on an icon to
+              view its name.
+            </p>
+            <Technologies />
+          </div>
+          </div>
+        </div>
+      </div>
+      <DotPattern className={cn("-z-10 opacity-50 [mask-image:radial-gradient(300px_circle_at_center,white,transparent)]")}/>
     </div>
   );
 }
