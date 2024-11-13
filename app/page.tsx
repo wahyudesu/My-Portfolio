@@ -1,42 +1,61 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Technologies from "app/components/technologies";
-import DotPattern from "app/components/ui/dot-pattern";
+import { DotPattern } from "app/components/ui/dot-pattern";
 import { cn } from "lib/utils";
 import Aos from "app/components/aos";
-import {TextGenerateEffect} from "app/components/ui/text-generate-effect";
-import {HyperText} from "app/components/ui/hyper-text";
+import { TextGenerateEffect } from "app/components/ui/text-generate-effect";
+import { HyperText } from "app/components/ui/hyper-text";
+import React from 'react';
+import Typewriter from 'typewriter-effect';
 
+export function TypewriterEffectDemo() {
+  return (
+    <div className="flex flex-col items-center justify-center">
+      <Typewriter
+        options={{
+          strings: [
+            "Full Stack Developer",
+            "Data Science Student",
+            "UI/UX Designer",
+            "Tech Enthusiast"
+          ],
+          autoStart: true,
+          loop: true,
+          wrapperClassName: "text-xl",
+          cursorClassName: "text-blue-500 dark:text-blue-500",
+        }}
+      />
+    </div>
+  );
+}
 
 export default function Page() {
-  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
-  const [isPopoverVisible, setIsPopoverVisible] = useState(false); // State for popover visibility
-  const baseUrl = "https://whyikbal.vercel.app"; // Base URL for project showcase
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isPopoverVisible, setIsPopoverVisible] = useState(false);
+  const baseUrl = "https://whyikbal.vercel.app";
 
-  // Toggle modal visibility
   const toggleModal = () => setIsModalOpen(!isModalOpen);
   const closeModal = () => setIsModalOpen(false);
 
-  // Popover visibility functions
   const showPopover = () => setIsPopoverVisible(true);
   const hidePopover = () => setIsPopoverVisible(false);
 
   return (
     <div>
-      <div className="h-[calc(100vh-15rem)] flex flex-col justify-center">
+      <div className="h-[calc(100vh-5rem)] flex flex-col justify-center">
         <h1 className="mb-2 text-6xl sm:text-7xl font-semibold tracking-tighter text-center">
           <HyperText text="Wahyu Ikbal Maulana" />
-          {/* <TextGenerateEffect words="Wahyu Ikbal Maulana" /> */}
-        </h1> 
+        </h1>
         <p className="mx-auto max-w-sm sm:max-w-md mb-2 text-center font-medium sm:text-xl">
           I am a Data Science student at the top polytechnic in Southeast Asia.
         </p>
         <Aos />
         <Link
           href="#"
-          onClick={toggleModal} // Open modal when clicked
+          onClick={toggleModal}
           className="mx-auto my-4 sm:my-6 group w-fit flex items-stretch bg-zinc-950 border border-neutral-700 
             px-4 sm:px-6 py-2 rounded-xl hover:bg-zinc-900 hover:border-neutral-600 duration-200 
             ease-in-out outline-2 outline-transparent focus:outline-blue-500 font-medium"
@@ -47,6 +66,9 @@ export default function Page() {
         >
           Connect with me
         </Link>
+        <div>
+          <TypewriterEffectDemo />
+        </div>
       </div>
 
       {/* Modal */}
@@ -55,7 +77,7 @@ export default function Page() {
           tabIndex={-1}
           aria-hidden={!isModalOpen}
           className="fixed inset-0 flex items-center justify-center z-50 overflow-y-auto bg-black bg-opacity-50"
-          onClick={closeModal} // Close modal when clicked outside
+          onClick={closeModal}
         >
           <div className="relative p-4 w-full max-w-sm max-h-full" onClick={(e) => e.stopPropagation()}>
             <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
@@ -64,7 +86,7 @@ export default function Page() {
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Connect With Me</h3>
                 <button
                   type="button"
-                  onClick={closeModal} // Close the modal on click
+                  onClick={closeModal}
                   className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm h-8 w-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
                 >
                   <svg
@@ -114,7 +136,6 @@ export default function Page() {
                       {isPopoverVisible && (
                         <div
                           className="absolute z-10 p-3 inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600"
-                          // className="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600"
                           style={{ top: "100%", left: 0 }}
                         >
                           <div className="flex items-center justify-between mb-2">
@@ -160,7 +181,7 @@ export default function Page() {
                                 <span>Followers</span>
                               </a>
                             </li>
-                          </ul>
+                          </ul>?
                         </div>
                       )}
                     </div>
@@ -195,7 +216,7 @@ export default function Page() {
           </div>
         </div>
       )}
-<div className="space-y-8">
+      <div className="space-y-8">
         <h2 className="text-2xl lg:text-3xl font-semibold tracking-tighter text-center sm:text-left">
           My experience
         </h2>
@@ -258,16 +279,16 @@ export default function Page() {
         <div className="flex flex-col gap-8">
           <div className="flex flex-col">
             <div className="mt-10 lg:mt-10">
-            <h2 className="text-2xl lg:text-3xl font-semibold tracking-tighter text-center sm:text-left">
-              Skills - Tools
-            </h2>
-            <p className="mt-2 text-neutral-400 text-center sm:text-left">
-              <span className="inline-block sm:hidden">Tap</span>
-              <span className="hidden sm:inline-block">Hover</span> on an icon to
-              view its name.
-            </p>
-            <Technologies />
-          </div>
+              <h2 className="text-2xl lg:text-3xl font-semibold tracking-tighter text-center sm:text-left">
+                Skills - Tools
+              </h2>
+              <p className="mt-2 text-neutral-400 text-center sm:text-left">
+                <span className="inline-block sm:hidden">Tap</span>
+                <span className="hidden sm:inline-block">Hover</span> on an icon to
+                view its name.
+              </p>
+              <Technologies />
+            </div>
           </div>
         </div>
       </div>

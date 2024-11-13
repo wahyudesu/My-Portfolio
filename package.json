@@ -29,7 +29,8 @@
     "sugar-high": "^0.6.0",
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7",
-    "typescript": "5.3.3"
+    "typescript": "5.3.3",
+    "typewriter-effect": "^2.21.0"
   },
   "pnpm": {
     "overrides": {
