@@ -28,7 +28,6 @@ function TypewriterEffectDemo() {
           cursorClassName: "text-blue-500 dark:text-blue-500",
           delay: 65, // Decrease delay between each character
           deleteSpeed: 20, // Increase delete speed
-          pauseFor: 1000, // Reduce pause between words to 500ms
         }}
       />
     </div>
