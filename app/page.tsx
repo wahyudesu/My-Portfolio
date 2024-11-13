@@ -274,12 +274,3 @@ export default function Page() {
     </div>
   );
 }
-
-export function HyperTextDemo() {
-  return (
-    <TextGenerateEffect
-      className="text-4xl font-bold text-black dark:text-white"
-      words="Hyper Text"
-    />
-  );
-}
