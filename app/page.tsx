@@ -7,7 +7,7 @@ import { DotPattern } from "app/components/ui/dot-pattern";
 import { cn } from "lib/utils";
 import Aos from "app/components/aos";
 import { TextGenerateEffect } from "app/components/ui/text-generate-effect";
-import { HyperText } from "app/components/ui/hyper-text";
+// import { HyperText } from "app/components/ui/hyper-text";
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 
@@ -18,7 +18,7 @@ export function TypewriterEffectDemo() {
         options={{
           strings: [
             "Full Stack Developer",
-            "Data Science Student",
+            "Data Science Student", 
             "UI/UX Designer",
             "Tech Enthusiast"
           ],
@@ -26,6 +26,9 @@ export function TypewriterEffectDemo() {
           loop: true,
           wrapperClassName: "text-xl",
           cursorClassName: "text-blue-500 dark:text-blue-500",
+          delay: 65, // Decrease delay between each character
+          deleteSpeed: 20, // Increase delete speed
+          pauseFor: 1000, // Reduce pause between words to 500ms
         }}
       />
     </div>
@@ -47,7 +50,7 @@ export default function Page() {
     <div>
       <div className="h-[calc(100vh-5rem)] flex flex-col justify-center">
         <h1 className="mb-2 text-6xl sm:text-7xl font-semibold tracking-tighter text-center">
-          <HyperText text="Wahyu Ikbal Maulana" />
+          <TextGenerateEffect words="Wahyu Ikbal Maulana" />
         </h1>
         <p className="mx-auto max-w-sm sm:max-w-md mb-2 text-center font-medium sm:text-xl">
           I am a Data Science student at the top polytechnic in Southeast Asia.
@@ -275,21 +278,17 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="space-y-8">
-        <div className="flex flex-col gap-8">
-          <div className="flex flex-col">
-            <div className="mt-10 lg:mt-10">
-              <h2 className="text-2xl lg:text-3xl font-semibold tracking-tighter text-center sm:text-left">
-                Skills - Tools
-              </h2>
-              <p className="mt-2 text-neutral-400 text-center sm:text-left">
-                <span className="inline-block sm:hidden">Tap</span>
-                <span className="hidden sm:inline-block">Hover</span> on an icon to
-                view its name.
-              </p>
-              <Technologies />
-            </div>
-          </div>
+      <div className="space-y-8 mt-16 flex flex-col gap-8">
+        <div className="mt-10lg:mt-10">
+          <h2 className="text-2xl lg:text-3xl font-semibold tracking-tighter text-center sm:text-left">
+            Skills - Tools
+          </h2>
+          <p className="mt-2 text-neutral-400 text-center sm:text-left">
+            <span className="inline-block sm:hidden">Tap</span>
+            <span className="hidden sm:inline-block">Hover</span> on an icon to
+            view its name.
+          </p>
+          <Technologies />
         </div>
       </div>
       <DotPattern className={cn("-z-10 opacity-50 [mask-image:radial-gradient(300px_circle_at_center,white,transparent)]")}/>
