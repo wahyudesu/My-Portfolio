@@ -6,6 +6,8 @@ import Technologies from "app/components/technologies";
 import DotPattern from "app/components/ui/dot-pattern";
 import { cn } from "lib/utils";
 import Aos from "app/components/aos";
+import {TextGenerateEffect} from "app/components/ui/text-generate-effect";
+
 
 export default function Page() {
   const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
@@ -24,8 +26,9 @@ export default function Page() {
     <div>
       <div className="h-[calc(100vh-15rem)] flex flex-col justify-center">
         <h1 className="mb-2 text-6xl sm:text-7xl font-semibold tracking-tighter text-center">
-          Wahyu Ikbal Maulana
-        </h1>
+          <TextGenerateEffect words="Wahyu Ikbal Maulana"
+          />
+        </h1> 
         <p className="mx-auto max-w-sm sm:max-w-md mb-2 text-center font-medium sm:text-xl">
           I am a Data Science student at the top polytechnic in Southeast Asia.
         </p>
@@ -269,5 +272,14 @@ export default function Page() {
       </div>
       <DotPattern className={cn("-z-10 opacity-50 [mask-image:radial-gradient(300px_circle_at_center,white,transparent)]")}/>
     </div>
+  );
+}
+
+export function HyperTextDemo() {
+  return (
+    <TextGenerateEffect
+      className="text-4xl font-bold text-black dark:text-white"
+      words="Hyper Text"
+    />
   );
 }
