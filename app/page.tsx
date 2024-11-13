@@ -218,7 +218,7 @@ export default function Page() {
           </div>
         </div>
       )}
-      <div className="space-y-8">
+      <div className="space-y-10 mt-14 lg:mt-19">
         <h2 className="text-2xl lg:text-3xl font-semibold tracking-tighter text-center sm:text-left">
           My experience
         </h2>
@@ -278,7 +278,7 @@ export default function Page() {
       </div>
 
       <div className="space-y-8 mt-16 flex flex-col gap-8">
-        <div className="mt-10lg:mt-10">
+        <div className="mt-10 lg:mt-1">
           <h2 className="text-2xl lg:text-3xl font-semibold tracking-tighter text-center sm:text-left">
             Skills - Tools
           </h2>
