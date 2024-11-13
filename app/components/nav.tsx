@@ -13,6 +13,10 @@ const navItems = {
   "/blog": {
     name: "blog",
   },
+  "/chat_with_me": {
+    name: "chat me",
+  },
+  
 };
 
 export function Navbar() {
