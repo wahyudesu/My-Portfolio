@@ -18,12 +18,6 @@
     "type": "Fullstack Framework"
   },
   {
-    "icon": "icons/tailwindcss.svg",
-    "highlight": "bg-cyan-300/20",
-    "name": "Tailwind",
-    "type": "CSS Framework"
-  },
-  {
     "icon": "icons/git.svg",
     "highlight": "bg-red-400/20",
     "name": "Git",
@@ -48,9 +42,21 @@
     "type": "Deep Learning"
   },
   {
-    "icon": "icons/R_logo.svg",
+    "icon": "icons/r-project-icon.svg",
     "highlight": "bg-slate-400/20",
     "name": "R",
     "type": "Deep Learning"
+  },
+  {
+    "icon": "icons/hf.svg",
+    "highlight": "bg-slate-400/20",
+    "name": "Hugging Face",
+    "type": "LLM"
+  },
+  {
+    "icon": "icons/postgre.svg",
+    "highlight": "bg-slate-400/20",
+    "name": "PostgreSQL",
+    "type": "Database"
   }
 ]
