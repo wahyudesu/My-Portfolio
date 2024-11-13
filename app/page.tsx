@@ -11,28 +11,43 @@ import { TextGenerateEffect } from "app/components/ui/text-generate-effect";
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 
-function TypewriterEffectDemo() {
+function TypewriterEffect() {
+  const [startAnimation, setStartAnimation] = useState(false);
+
+  useEffect(() => {
+    // Set a 2-second delay before starting the animation
+    const timer = setTimeout(() => {
+      setStartAnimation(true);
+    }, 2000);
+
+    return () => clearTimeout(timer); // Clean up the timer on component unmount
+  }, []);
+
   return (
     <div className="flex flex-col items-center justify-center">
-      <Typewriter
-        options={{
-          strings: [
-            "Full Stack Developer",
-            "Data Science Student", 
-            "UI/UX Designer",
-            "Tech Enthusiast"
-          ],
-          autoStart: true,
-          loop: true,
-          wrapperClassName: "text-xl",
-          cursorClassName: "text-blue-500 dark:text-blue-500",
-          delay: 65, // Decrease delay between each character
-          deleteSpeed: 20, // Increase delete speed
-        }}
-      />
+      {startAnimation && (
+        <Typewriter
+          options={{
+            strings: [
+              "Full Stack Developer",
+              "Data Science Student",
+              "UI/UX Designer",
+              "Tech Enthusiast"
+            ],
+            autoStart: true,
+            loop: true,
+            wrapperClassName: "text-xl",
+            cursorClassName: "text-blue-500 dark:text-blue-500",
+            delay: 65, // Decrease delay between each character
+            deleteSpeed: 20, // Increase delete speed
+          }}
+        />
+      )}
     </div>
   );
 }
+
+export default TypewriterEffect;
 
 export default function Page() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -69,7 +84,7 @@ export default function Page() {
           Connect with me
         </Link>
         <div>
-          <TypewriterEffectDemo />
+          <TypewriterEffect />
         </div>
       </div>
 
