@@ -12,12 +12,6 @@
     "type": "Language"
   },
   {
-    "icon": "icons/react.svg",
-    "highlight": "bg-sky-300/20",
-    "name": "React",
-    "type": "Frontend Library"
-  },
-  {
     "icon": "icons/nextjs.svg",
     "highlight": "bg-slate-400/20",
     "name": "Next",
@@ -46,5 +40,17 @@
     "highlight": "bg-slate-400/20",
     "name": "Tableau",
     "type": "Data Visualization"
+  },
+  {
+    "icon": "icons/pytorch.svg",
+    "highlight": "bg-slate-400/20",
+    "name": "Pytorch",
+    "type": "Deep Learning"
+  },
+  {
+    "icon": "icons/R_logo.svg",
+    "highlight": "bg-slate-400/20",
+    "name": "R",
+    "type": "Deep Learning"
   }
 ]

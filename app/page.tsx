@@ -28,7 +28,7 @@ export default function Page() {
       <div className="h-[calc(100vh-15rem)] flex flex-col justify-center">
         <h1 className="mb-2 text-6xl sm:text-7xl font-semibold tracking-tighter text-center">
           <HyperText text="Wahyu Ikbal Maulana" />
-          <TextGenerateEffect words="Wahyu Ikbal Maulana" />
+          {/* <TextGenerateEffect words="Wahyu Ikbal Maulana" /> */}
         </h1> 
         <p className="mx-auto max-w-sm sm:max-w-md mb-2 text-center font-medium sm:text-xl">
           I am a Data Science student at the top polytechnic in Southeast Asia.
