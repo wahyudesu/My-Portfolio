@@ -11,7 +11,7 @@ import { TextGenerateEffect } from "app/components/ui/text-generate-effect";
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 
-export function TypewriterEffectDemo() {
+function TypewriterEffectDemo() {
   const [startAnimation, setStartAnimation] = useState(false);
 
   useEffect(() => {
