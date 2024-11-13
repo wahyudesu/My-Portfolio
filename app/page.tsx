@@ -11,7 +11,7 @@ import { TextGenerateEffect } from "app/components/ui/text-generate-effect";
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 
-function TypewriterEffect() {
+export function TypewriterEffectDemo() {
   const [startAnimation, setStartAnimation] = useState(false);
 
   useEffect(() => {
@@ -46,8 +46,6 @@ function TypewriterEffect() {
     </div>
   );
 }
-
-export default TypewriterEffect;
 
 export default function Page() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -84,7 +82,7 @@ export default function Page() {
           Connect with me
         </Link>
         <div>
-          <TypewriterEffect />
+          <TypewriterEffectDemo />
         </div>
       </div>
 
