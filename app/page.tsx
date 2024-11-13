@@ -47,7 +47,7 @@ export default function Page() {
 
   return (
     <div>
-      <div className="h-[calc(100vh-5rem)] flex flex-col justify-center">
+      <div className="h-[calc(100vh-10rem)] flex flex-col justify-center">
         <h1 className="mb-2 text-6xl sm:text-7xl font-semibold tracking-tighter text-center">
           <TextGenerateEffect words="Wahyu Ikbal Maulana" />
         </h1>
