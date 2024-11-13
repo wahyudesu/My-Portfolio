@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { BlogPosts } from "app/components/post";
 import BookItem from "app/components/bookitem";
-import { metadata } from "app/blog/metadata"; // Import metadata
+import { metadata } from "@/app/stuff/metadata"; // Import metadata
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -91,7 +91,7 @@ export default function Blog() {
       <p className="mb-4">
         {view === "posts"
           ? "A collection of posts I've written about various topics. From tech to personal, I write about what interests me."
-          : "Explore my favorite books that have shaped my perspective and inspired my journey."}
+          : "Explore my favorite books that have shaped my perspective and inspired my journey. I hope you find them as interesting as I do."}
       </p>
 
       {/* Navigation buttons */}

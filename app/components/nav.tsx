@@ -5,13 +5,13 @@ const navItems = {
     name: "home",
   },
   "/showcase": {
-    name: "showcase",
+    name: "projects",
   },
   "/resume": {
     name: "resume",
   },
-  "/blog": {
-    name: "blog",
+  "/stuff": {
+    name: "stuff",
   },
   "/chat_with_me": {
     name: "chat me",
@@ -33,7 +33,7 @@ export function Navbar() {
                 <Link
                   key={path}
                   href={path}
-                  className="transition-all text-neutral-200 flex align-middle relative py-1 px-2 m-1 outline-2 outline-transparent focus:outline-blue-500"
+                  className="transition-all text-neutral-200 flex align-middle relative py-1 px-1 m-1 outline-2 outline-transparent focus:outline-blue-500"
                 >
                   {name}
                 </Link>
