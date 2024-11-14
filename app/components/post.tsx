@@ -5,7 +5,7 @@ interface Post {
   title: string;
   url: string;
   description: string;
-  tags: string[]; // New tags array
+  tags: string[];
 }
 
 interface BlogPostsProps {

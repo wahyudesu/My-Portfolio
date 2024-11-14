@@ -37,26 +37,62 @@
   },
   {
     "icon": "icons/pytorch.svg",
-    "highlight": "bg-slate-400/20",
+    "highlight": "bg-red-300/20",
     "name": "Pytorch",
     "type": "Deep Learning"
   },
   {
     "icon": "icons/r-project-icon.svg",
-    "highlight": "bg-slate-400/20",
+    "highlight": "bg-blue-300/20",
     "name": "R",
     "type": "Deep Learning"
   },
   {
     "icon": "icons/hf.svg",
-    "highlight": "bg-slate-400/20",
+    "highlight": "bg-yellow-300/20",
     "name": "Hugging Face",
     "type": "LLM"
   },
   {
     "icon": "icons/postgre.svg",
-    "highlight": "bg-slate-400/20",
+    "highlight": "bg-blue-300/20",
     "name": "PostgreSQL",
     "type": "Database"
+  },
+  {
+    "icon": "icons/framer.svg",
+    "highlight": "bg-slate-400/20",
+    "name": "Framer",
+    "type": "Design Software"
+  },
+  {
+    "icon": "icons/tensorflow-icon.svg",
+    "highlight": "bg-slate-400/20",
+    "name": "Tensorflow",
+    "type": "Deep Learning"
+  },
+  {
+    "icon": "icons/grafana.svg",
+    "highlight": "bg-red-300/20",
+    "name": "Grafana",
+    "type": "Data Visualization"
+  },
+  {
+    "icon": "icons/d3.svg",
+    "highlight": "bg-red-300/20",
+    "name": "d3",
+    "type": "Data Visualization"
+  },
+  {
+    "icon": "icons/powerbi.svg",
+    "highlight": "bg-red-300/20",
+    "name": "Power BI",
+    "type": "Data Visualization"
   }
 ]
+
+// Framer 
+// Tensorflow
+// Grafana
+// d3 js
+// power bi

@@ -23,7 +23,7 @@ export default function Card({ data }: CardProps) {
           />
 
           <div
-            className="absolute inset-0 flex flex-col items-start justify-end px-5 pb-7 tracking-tighter bg-black/80 group-hover:bg-black/90 
+            className="absolute inset-0 flex flex-col items-start justify-end px-5 pb-7 tracking-tighter bg-black/70 group-hover:bg-black/40 
           rounded-xl duration-200 ease-in-out"
           >
             <h2 className="text-white text-xl sm:text-2xl font-semibold">

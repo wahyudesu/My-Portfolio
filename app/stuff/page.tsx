@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { BlogPosts } from "app/components/post";
 import BookItem from "app/components/bookitem";
 import { metadata } from "@/app/stuff/metadata"; // Import metadata
+import { Tabs } from "@/app/components/ui/tabs";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -83,6 +84,11 @@ export default function Blog() {
     AOS.init({ duration: 50 });
   }, []);
 
+  const tabs = [
+    { title: "Writing", value: "posts" },
+    { title: "Reading", value: "books" },
+  ];
+
   return (
     <div>
       <h1 className="font-semibold text-5xl md:text-6xl mb-8 tracking-tighter">
@@ -94,22 +100,15 @@ export default function Blog() {
           : "Explore my favorite books that have shaped my perspective and inspired my journey. I hope you find them as interesting as I do."}
       </p>
 
-      {/* Navigation buttons */}
-      <div className="flex space-x-4 mb-8">
-        <button
-          onClick={() => setView("posts")}
-          className={`flex items-center font-medium text-center px-4 py-2 rounded ${view === "posts" ? "bg-blue-500 text-white" : "bg-gray-200 text-gray-700"}`}
-        >
-          Writing
-        </button>
-        <button
-          onClick={() => setView("books")}
-          className={`flex items-center font-medium text-center px-4 py-2 rounded ${view === "books" ? "bg-blue-500 text-white" : "bg-gray-200 text-gray-700"}`}
-          >
-          Reading
-        </button>
-      </div>
-
+      {/* Navigation tabs */}
+      <Tabs
+        tabs={tabs}
+        activeTabClassName="bg-blue-200"
+        oke="absolute inset-0 bg-gray-200 dark:bg-zinc-800 rounded-full"
+        tabClassName="bg-gray-0"
+        containerClassName="flex space-x-4 mb-8"
+      />
+      {/* Removed onTabChange as it is not a valid prop */}
       {/* Conditional rendering based on selected view */}
       {view === "posts" ? (
         <BlogPosts posts={posts} />

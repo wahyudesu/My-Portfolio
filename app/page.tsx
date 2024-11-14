@@ -10,6 +10,8 @@ import { TextGenerateEffect } from "app/components/ui/text-generate-effect";
 // import { HyperText } from "app/components/ui/hyper-text";
 import React from 'react';
 import Typewriter from 'typewriter-effect';
+import { AnimatedList } from "app/components/ui/animated-list";
+import Ripple from "@/components/magicui/ripple";
 
 function TypewriterEffectDemo() {
   const [startAnimation, setStartAnimation] = useState(false);
@@ -29,10 +31,10 @@ function TypewriterEffectDemo() {
         <Typewriter
           options={{
             strings: [
-              "Full Stack Developer",
-              "Data Science Student",
+              "Data Analyst",
+              "Full Stack Engineer",
               "UI/UX Designer",
-              "Tech Enthusiast"
+              "AI Engineer"
             ],
             autoStart: true,
             loop: true,
@@ -238,7 +240,7 @@ export default function Page() {
         <div className="flex flex-col gap-8">
           <div className="flex flex-col">
             <h3 className="text-xl lg:text-2xl font-semibold tracking-tighter mb-4">
-              Hiyield
+              Data Analyst
             </h3>
             <div className="h-full border-l-2 pl-4 border-zinc-600">
               <p className="text-lg font-semibold tracking-tighter">
@@ -251,7 +253,7 @@ export default function Page() {
                   target="_blank"
                   className="text-blue-500 underline outline-2 outline-transparent focus:outline-blue-500"
                 >
-                  Hiyield
+                  Kanotaria
                 </Link>
                 {","} where I contribute to various real-world projects. You can
                 find these on the{" "}
@@ -269,21 +271,20 @@ export default function Page() {
 
           <div className="flex flex-col">
             <h3 className="text-xl lg:text-2xl font-semibold tracking-tighter mb-4">
-              Cornwall IT Services (NHS)
+              Freelance Data Infographics
             </h3>
             <div className="h-full border-l-2 pl-4 border-zinc-600">
               <p className="text-lg font-semibold tracking-tighter">2023</p>
               <p className="text-neutral-400">
-                Work experience at{" "}
-                <Link
+                Lorem ipsum {" "}
+                {/* <Link
                   href="https://cits.royalcornwallhospitals.nhs.uk/"
                   target="_blank"
                   className="text-blue-500 underline outline-2 outline-transparent focus:outline-blue-500"
                 >
                   CITS
-                </Link>
-                {" (NHS), "} where I made JavaScript assesments for patients,
-                conforming to the NHS design system.
+                </Link> */}
+                {" (NHS) "} 
               </p>
             </div>
           </div>

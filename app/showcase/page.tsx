@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Projects from "app/components/projects";
 import Link from "next/link";
+import { badgeVariants } from "app/components/ui/badge"
 
 export const metadata: Metadata = {
   title: "Showcase",
@@ -31,6 +32,11 @@ export default function Showcase() {
         </Link>{" "}
         profile.
       </span>
+      <div className="flex gap-2 mt-4">
+        <Link href="#" className={badgeVariants({ variant: "outline" })}> Github </Link>
+        <Link href="#" className={badgeVariants({ variant: "outline" })}> Hugging Face </Link>
+        <Link href="#" className={badgeVariants({ variant: "outline" })}> Kaggle </Link>
+      </div>
       <div className="my-8 lg:my-12">
         <Projects />
       </div>
