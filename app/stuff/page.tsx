@@ -1,11 +1,10 @@
-"use client"
+"use client";
 
 import { useEffect, useState } from "react";
 import { BlogPosts } from "app/components/post";
 import BookItem from "app/components/bookitem";
-import { metadata } from "@/app/stuff/metadata"; // Import metadata
-import { Tabs } from "@/app/components/ui/tabs";
-
+import { metadata } from "@/app/stuff/metadata";
+import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -26,18 +25,6 @@ export default function Blog() {
       description: "How data science can enhance marketing strategies.",
       tags: ["Data Science", "Marketing", "Business"],
     },
-    {
-      title: "Data Science in Marketing",
-      url: "https://medium.com/@yourusername/data-science-in-marketing",
-      description: "How data science can enhance marketing strategies.",
-      tags: ["Data Science", "Marketing", "Business"],
-    },
-    {
-      title: "Data Science in Marketing",
-      url: "https://medium.com/@yourusername/data-science-in-marketing",
-      description: "How data science can enhance marketing strategies.",
-      tags: ["Data Science", "Marketing", "Business"],
-    },
   ];
 
   // Book collection data
@@ -50,33 +37,9 @@ export default function Blog() {
     },
     {
       title: "Limitless",
-      author: "JIM Kwik",
+      author: "Jim Kwik",
       cover: "/books/limitless.jpg",
       description: "A classic tale of racial injustice and the loss of innocence",
-    },
-    {
-      title: "The talent Code",
-      author: "George Orwell",
-      cover: "/books/talent.jpg",
-      description: "A dystopian novel that depicts a totalitarian future society",
-    },
-    {
-      title: "Indistractable",
-      author: "George Orwell",
-      cover: "/books/indistractable.jpg",
-      description: "A dystopian novel that depicts a totalitarian future society",
-    },
-    {
-      title: "Tenang yang kau cari bukan di sini",
-      author: "George Orwell",
-      cover: "/books/tenang.jpg",
-      description: "A dystopian novel that depicts a totalitarian future society",
-    },
-    {
-      title: "Get out of my head",
-      author: "George Orwell",
-      cover: "/books/getout.jpg",
-      description: "A dystopian novel that depicts a totalitarian future society",
     },
   ];
 
@@ -85,8 +48,8 @@ export default function Blog() {
   }, []);
 
   const tabs = [
-    { title: "Writing", value: "posts" },
-    { title: "Reading", value: "books" },
+    { value: "posts", label: "Writing" },
+    { value: "books", label: "Reading" },
   ];
 
   return (
@@ -100,15 +63,30 @@ export default function Blog() {
           : "Explore my favorite books that have shaped my perspective and inspired my journey. I hope you find them as interesting as I do."}
       </p>
 
-      {/* Navigation tabs */}
-      <Tabs
-        tabs={tabs}
-        activeTabClassName="bg-blue-200"
-        oke="absolute inset-0 bg-gray-200 dark:bg-zinc-800 rounded-full"
-        tabClassName="bg-gray-0"
-        containerClassName="flex space-x-4 mb-8"
-      />
-      {/* Removed onTabChange as it is not a valid prop */}
+      {/* Navigation tabs with animation */}
+      <div className="flex space-x-4 mb-8 relative">
+        {tabs.map((tab) => (
+          <button
+            key={tab.value}
+            onClick={() => setView(tab.value)}
+            className={`relative px-4 py-2 rounded-full text-sm font-medium transition ${
+              view === tab.value ? "text-white" : "text-gray-500 hover:text-gray-700"
+            }`}
+            style={{ WebkitTapHighlightColor: "transparent" }}
+          >
+            {view === tab.value && (
+              <motion.span
+                layoutId="bubble"
+                className="absolute inset-0 bg-blue-500 z-10"
+                style={{ borderRadius: 9999 }}
+                transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
+              />
+            )}
+            <span className="relative z-20">{tab.label}</span>
+          </button>
+        ))}
+      </div>
+
       {/* Conditional rendering based on selected view */}
       {view === "posts" ? (
         <BlogPosts posts={posts} />
