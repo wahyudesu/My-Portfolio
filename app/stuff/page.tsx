@@ -4,14 +4,13 @@ import { useEffect, useState } from "react";
 import { BlogPosts } from "app/components/post";
 import BookItem from "app/components/bookitem";
 import { metadata } from "@/app/stuff/metadata";
-import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Tabslide from "app/components/ui/tab";
 
 export default function Blog() {
   const [view, setView] = useState<"posts" | "books">("posts");
 
-  // Example posts data with Medium URLs and tags
   const posts = [
     {
       title: "Understanding Generative AI",
@@ -27,7 +26,6 @@ export default function Blog() {
     },
   ];
 
-  // Book collection data
   const books = [
     {
       title: "Faster than normal",
@@ -47,10 +45,9 @@ export default function Blog() {
     AOS.init({ duration: 50 });
   }, []);
 
-  const tabs = [
-    { value: "posts", label: "Writing" },
-    { value: "books", label: "Reading" },
-  ];
+  const handleTabChange = (index: number) => {
+    setView(index === 0 ? "posts" : "books");
+  };
 
   return (
     <div>
@@ -63,31 +60,8 @@ export default function Blog() {
           : "Explore my favorite books that have shaped my perspective and inspired my journey. I hope you find them as interesting as I do."}
       </p>
 
-      {/* Navigation tabs with animation */}
-      <div className="flex space-x-4 mb-8 relative">
-        {tabs.map((tab) => (
-          <button
-            key={tab.value}
-            onClick={() => setView(tab.value)}
-            className={`relative px-4 py-2 rounded-full text-sm font-medium transition ${
-              view === tab.value ? "text-white" : "text-gray-500 hover:text-gray-700"
-            }`}
-            style={{ WebkitTapHighlightColor: "transparent" }}
-          >
-            {view === tab.value && (
-              <motion.span
-                layoutId="bubble"
-                className="absolute inset-0 bg-blue-500 z-10"
-                style={{ borderRadius: 9999 }}
-                transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
-              />
-            )}
-            <span className="relative z-20">{tab.label}</span>
-          </button>
-        ))}
-      </div>
+      <Tabslide onTabChange={handleTabChange} initialTab={view === "posts" ? 0 : 1} />
 
-      {/* Conditional rendering based on selected view */}
       {view === "posts" ? (
         <BlogPosts posts={posts} />
       ) : (

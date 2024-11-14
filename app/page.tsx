@@ -11,7 +11,7 @@ import { TextGenerateEffect } from "app/components/ui/text-generate-effect";
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import { AnimatedList } from "app/components/ui/animated-list";
-import Ripple from "@/components/magicui/ripple";
+import Ripple from "@/app/components/ui/ripple";
 
 function TypewriterEffectDemo() {
   const [startAnimation, setStartAnimation] = useState(false);
