@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { badgeVariants } from "app/components/ui/badge"
 
 export default function Resume() {
   const [cvAtsText, setCvAtsText] = useState("CV ATS");
@@ -26,15 +27,25 @@ export default function Resume() {
       <p className="mb-4">
         A summary of my educational background, experiences, and skills. Download my resume to learn more about my journey.
       </p>
+      <h3 className="font-medium text-xl">My Skill</h3>
+      <div className="flex gap-2 mt-2 mb-8">
+        <span className={badgeVariants({ variant: "outline" })}>Data Anaytics</span>
+        <span className={badgeVariants({ variant: "outline" })}>Team Work</span>
+        <span className={badgeVariants({ variant: "outline" })}>Kaggle</span>
+        <span className={badgeVariants({ variant: "outline" })}>Github</span>
+        <span className={badgeVariants({ variant: "outline" })}>Hugging Face</span>
+        <span className={badgeVariants({ variant: "outline" })}>Kaggle</span>
+      </div>
 
       <section>
-        <h2 className="font-semibold text-3xl md:text-4xl mb-4">Education</h2>
-        <ul>
+      <h2 className="font-semibold text-3xl md:text-4xl mb-4">10+ Project</h2>
+      <h2 className="font-semibold text-3xl md:text-4xl mb-4">50+ Certificate</h2>
+      <h2 className="font-semibold text-3xl md:text-4xl mb-4">10+ Experience</h2>
+      <h2 className="font-semibold text-3xl md:text-4xl mb-4">3+ Volunteer</h2>
+      <ul>
           <li className="mb-2">
-            <h3 className="font-medium text-xl">Politeknik Elektronika Negeri Surabaya</h3>
-            <p>Applied Data Science, 2023 - Present</p>
+            <h3 className="font-medium text-xl">Get my Resume</h3>
           </li>
-          {/* Tambahkan lebih banyak item pendidikan jika diperlukan */}
         </ul>
       </section>
 

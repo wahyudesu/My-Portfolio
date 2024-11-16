@@ -129,10 +129,16 @@ export default function ChatPage() {
           className="flex-1 border border-gray-300 rounded-md px-3 py-2"
           placeholder="Adakah yang ingin ditanyakan?"
         />
+        {/* <button
+          onClick={handleCvAtsClick}
+          className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded focus:bg-blue-900"
+        >
+          {cvAtsText}
+        </button> */}
         <button
           type="submit"
           disabled={isLoading}
-          className={`sm:ml-2 px-4 py-2 rounded-md ${
+          className={`bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded focus:bg-blue-900 ${
             isLoading ? "bg-gray-400" : "bg-blue-500 text-white"
           }`}
         >

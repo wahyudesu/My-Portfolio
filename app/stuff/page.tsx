@@ -39,7 +39,44 @@ export default function Blog() {
       cover: "/books/limitless.jpg",
       description: "A classic tale of racial injustice and the loss of innocence",
     },
+    {
+      title: "Get Out of Your Own Way",
+      author: "Dave Hollis",
+      cover: "/books/getout.jpg",
+      description: "Overcoming personal challenges and limiting beliefs",
+    },
+    {
+      title: "Good to Great",
+      author: "Jim Collins",
+      cover: "/books/good.jpg",
+      description: "Why some companies make the leap and others don't",
+    },
+    {
+      title: "Indistractable",
+      author: "Nir Eyal",
+      cover: "/books/indistractable.jpg",
+      description: "How to control your attention and live intentionally",
+    },
+    {
+      title: "Lupa Manusia",
+      author: "Erlita Pratiwi",
+      cover: "/books/lupamanusia.jpg",
+      description: "Exploring the human mind and its complexities",
+    },
+    {
+      title: "The Talent Code",
+      author: "Daniel Coyle",
+      cover: "/books/talent.jpg",
+      description: "Unlocking the secrets of skill mastery",
+    },
+    {
+      title: "Tenang",
+      author: "Mo Gawdat",
+      cover: "/books/tenang.jpg",
+      description: "The pursuit of happiness and calmness in life",
+    },
   ];
+  
 
   useEffect(() => {
     AOS.init({ duration: 50 });
