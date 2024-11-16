@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { badgeVariants } from "app/components/ui/badge"
+import { badgeVariants } from "app/components/ui/badge";
+import NumberTicker from "@/components/ui/number-ticker";
 
 export default function Resume() {
   const [cvAtsText, setCvAtsText] = useState("CV ATS");
@@ -9,14 +10,12 @@ export default function Resume() {
 
   const handleCvAtsClick = () => {
     setCvAtsText((prevText) => (prevText === "CV ATS" ? "Done" : "CV ATS"));
-    // Tambahkan logika untuk mengunduh file CV ATS di sini, jika diperlukan
-    window.open("https://drive.google.com/file/d/19D8u5UzKSp1F3XDs22rzW6TEfBt1e1v3/view?usp=sharing", '_blank'); // Sample link untuk CV ATS
+    window.open("https://drive.google.com/file/d/19D8u5UzKSp1F3XDs22rzW6TEfBt1e1v3/view?usp=sharing", '_blank');
   };
 
   const handleResumeKreatifClick = () => {
     setResumeKreatifText((prevText) => (prevText === "Resume Kreatif" ? "Done" : "Resume Kreatif"));
-    // Tambahkan logika untuk mengunduh file Resume Kreatif di sini, jika diperlukan
-    window.open("https://drive.google.com/file/d/19D8u5UzKSp1F3XDs22rzW6TEfBt1e1v3/view?usp=sharing", '_blank'); // Sample link untuk Resume Kreatif
+    window.open("https://drive.google.com/file/d/19D8u5UzKSp1F3XDs22rzW6TEfBt1e1v3/view?usp=sharing", '_blank');
   };
 
   return (
@@ -27,27 +26,34 @@ export default function Resume() {
       <p className="mb-4">
         A summary of my educational background, experiences, and skills. Download my resume to learn more about my journey.
       </p>
-      <h3 className="font-medium text-xl">My Skill</h3>
-      <div className="flex gap-2 mt-2 mb-8">
-        <span className={badgeVariants({ variant: "outline" })}>Data Anaytics</span>
-        <span className={badgeVariants({ variant: "outline" })}>Team Work</span>
-        <span className={badgeVariants({ variant: "outline" })}>Kaggle</span>
-        <span className={badgeVariants({ variant: "outline" })}>Github</span>
-        <span className={badgeVariants({ variant: "outline" })}>Hugging Face</span>
+      <h3 className="font-bold text-xl">My Skill</h3>
+      <div className="flex gap-2 mt-4">
+        <span className={badgeVariants({ variant: "outline" })}>Artificial Intelligence</span>
+        <span className={badgeVariants({ variant: "outline" })}>Data analysis</span>
+        <span className={badgeVariants({ variant: "outline" })}>UI/UX</span>
+
       </div>
-
+      <div className="flex gap-2 mt-2 mb-8">
+        <span className={badgeVariants({ variant: "outline" })}>Problem Solving</span>
+        <span className={badgeVariants({ variant: "outline" })}>Management</span>
+        <span className={badgeVariants({ variant: "outline" })}>Teamwork</span>
+        <span className={badgeVariants({ variant: "outline" })}>Project Management</span>
+      </div>
+      
       <section>
-      <h2 className="font-semibold text-3xl md:text-4xl mb-12">10+ Project</h2>
-      <h2 className="font-semibold text-3xl md:text-4xl mb-12">50+ Certificate</h2>
-      <h2 className="font-semibold text-3xl md:text-4xl mb-12">10+ Experience</h2>
-      <h2 className="font-semibold text-3xl md:text-4xl mb-12">3+ Volunteer</h2>
-        {/* <ul>
-          <li className="mb-2">
-            <h3 className="font-medium text-xl">Get my Resume</h3>
-          </li>
-        </ul> */}
+        <h2 className="font-semibold text-3xl md:text-4xl mb-12">
+          <NumberTicker value={10} />+ Project
+        </h2>
+        <h2 className="font-semibold text-3xl md:text-4xl mb-12">
+          <NumberTicker value={50} />+ Certificate
+        </h2>
+        <h2 className="font-semibold text-3xl md:text-4xl mb-12">
+          <NumberTicker value={10} />+ Experience
+        </h2>
+        <h2 className="font-semibold text-3xl md:text-4xl mb-12">
+          <NumberTicker value={3} />+ Volunteer
+        </h2>
       </section>
-
       <div className="flex space-x-4 mt-4">
         <button
           onClick={handleCvAtsClick}
@@ -55,7 +61,6 @@ export default function Resume() {
         >
           {cvAtsText}
         </button>
-        
         <button
           onClick={handleResumeKreatifClick}
           className="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded focus:bg-green-900"

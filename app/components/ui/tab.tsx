@@ -50,7 +50,7 @@ const Tabslide = ({ onTabChange, initialTab }: TabslideProps) => {
           }}
           className={`${
             activeTabIndex === index ? "" : "hover:text-neutral-300"
-          } my-auto cursor-pointer select-none rounded-full px-4 py-2 text-center font-light text-white`}
+          } my-auto cursor-pointer select-none rounded-full px-4 py-2 text-center font-medium text-white`}
           onClick={() => handleTabClick(index)}
         >
           {tab.name}

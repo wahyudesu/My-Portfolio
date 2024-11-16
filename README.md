@@ -2,9 +2,9 @@ MY PERSONAL PORTFOLIO
 
 # To Do
 
-- [ ] Fix naming paginaition
-- [ ] Fix sizing page
-- [ ] Avatar ai
+- [z] Fix naming paginaition
+- [x] Fix sizing page
+- [x] Avatar ai
 - [ ] Add some skills
 - [ ] Prepare resume documents
 - [ ] Optimizing fonts
