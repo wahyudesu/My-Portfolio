@@ -8,3 +8,4 @@ MY PERSONAL PORTFOLIO
 - [ ] Add more projects
 - [ ] Resume: Amount Certificate, Experience, Project
 - [ ] Resume: All of experience
+- [ ] Resume animated number

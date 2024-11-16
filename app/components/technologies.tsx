@@ -3,7 +3,7 @@ import technologies from "app/json/technologies.json";
 
 export default function Technologies() {
   return (
-    <div className="mx-auto sm:mx-0 mt-4 mb-12 w-fit grid grid-cols-5 sm:grid-cols-6 gap-3 sm:gap-5">
+    <div className="mx-auto mt-4 mb-12 w-fit grid grid-cols-4 sm:grid-cols-7 gap-3 sm:gap-5">
       {technologies.map((technology: any, index: number) => (
         <Technology key={index} {...technology} />
       ))}

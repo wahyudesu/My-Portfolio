@@ -20,8 +20,8 @@ export default function Technology({
           <Image
             src={icon}
             alt={name}
-            width={40}
-            height={40}
+            width={35}
+            height={35}
             className="object-cover rounded-md"
             draggable={false}
           />

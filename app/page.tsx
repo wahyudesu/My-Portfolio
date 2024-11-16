@@ -7,11 +7,8 @@ import { DotPattern } from "app/components/ui/dot-pattern";
 import { cn } from "lib/utils";
 import Aos from "app/components/aos";
 import { TextGenerateEffect } from "app/components/ui/text-generate-effect";
-// import { HyperText } from "app/components/ui/hyper-text";
 import React from 'react';
 import Typewriter from 'typewriter-effect';
-import { AnimatedList } from "app/components/ui/animated-list";
-import Ripple from "@/app/components/ui/ripple";
 
 function TypewriterEffectDemo() {
   const [startAnimation, setStartAnimation] = useState(false);
@@ -277,13 +274,6 @@ export default function Page() {
               <p className="text-lg font-semibold tracking-tighter">2023</p>
               <p className="text-neutral-400">
                 Lorem ipsum {" "}
-                {/* <Link
-                  href="https://cits.royalcornwallhospitals.nhs.uk/"
-                  target="_blank"
-                  className="text-blue-500 underline outline-2 outline-transparent focus:outline-blue-500"
-                >
-                  CITS
-                </Link> */}
                 {" (NHS) "} 
               </p>
             </div>

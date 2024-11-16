@@ -34,7 +34,6 @@ export default function Resume() {
         <span className={badgeVariants({ variant: "outline" })}>Kaggle</span>
         <span className={badgeVariants({ variant: "outline" })}>Github</span>
         <span className={badgeVariants({ variant: "outline" })}>Hugging Face</span>
-        <span className={badgeVariants({ variant: "outline" })}>Kaggle</span>
       </div>
 
       <section>
