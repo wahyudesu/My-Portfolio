@@ -2,10 +2,14 @@ MY PERSONAL PORTFOLIO
 
 # To Do
 
-- [ ] Optimize role
-- [ ] Optimize Experience
-- [ ] Chat with me (Ai)
+- [ ] Fix naming paginaition
+- [ ] Fix sizing page
+- [ ] Avatar ai
+- [ ] Add some skills
+- [ ] Prepare resume documents
+- [ ] Optimizing fonts
 - [ ] Add more projects
-- [ ] Resume: Amount Certificate, Experience, Project
-- [ ] Resume: All of experience
-- [ ] Resume animated number
+- [ ] Add more blog
+- [ ] Add more books
+- [ ] Add animated number (resume)
+- [ ] 

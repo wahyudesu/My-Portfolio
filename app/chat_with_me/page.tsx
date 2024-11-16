@@ -91,27 +91,27 @@ export default function ChatPage() {
           >
             {msg.sender === "bot" ? (
               <div className="flex items-start gap-2.5">
-                <img className="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="Bot image" />
+                <img className="w-8 h-8 rounded-full" src="/icons/avatar.jpg" alt="Bot image" />
                 <div className="flex flex-col gap-1 w-full max-w-[320px]">
                   <div className="flex items-center space-x-2 rtl:space-x-reverse">
-                    <span className="text-sm font-semibold text-gray-900 dark:text-white">Wahyu</span>
+                    <span className="text-sm font-semibold text-gray-500 dark:text-white">Wahyu</span>
                     <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
                       {new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
                     </span>
                   </div>
-                  <div className="flex flex-col leading-1.5 p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl dark:bg-gray-700">
+                  <div className="flex flex-col leading-1.5 p-3 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl dark:bg-gray-700">
                     <p className="text-sm font-normal text-gray-900 dark:text-white">{msg.text}</p>
                   </div>
                 </div>
               </div>
             ) : (
               <div className="flex flex-col gap-1 w-full max-w-[320px]">
-                <div className="flex items-center justify-end space-x-2 rtl:space-x-reverse">
+                {/* <div className="flex items-center justify-end space-x-2 rtl:space-x-reverse">
                   <span className="text-sm font-semibold text-gray-900 dark:text-white">You</span>
                   <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
                     {new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
                   </span>
-                </div>
+                </div> */}
                 <div className="flex flex-col leading-1.5 text-white rounded-s-xl rounded-se-xl">
                   <p className="text-sm font-normal">{msg.text}</p>
                 </div>

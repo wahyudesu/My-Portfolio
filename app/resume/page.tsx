@@ -37,15 +37,15 @@ export default function Resume() {
       </div>
 
       <section>
-      <h2 className="font-semibold text-3xl md:text-4xl mb-4">10+ Project</h2>
-      <h2 className="font-semibold text-3xl md:text-4xl mb-4">50+ Certificate</h2>
-      <h2 className="font-semibold text-3xl md:text-4xl mb-4">10+ Experience</h2>
-      <h2 className="font-semibold text-3xl md:text-4xl mb-4">3+ Volunteer</h2>
-      <ul>
+      <h2 className="font-semibold text-3xl md:text-4xl mb-12">10+ Project</h2>
+      <h2 className="font-semibold text-3xl md:text-4xl mb-12">50+ Certificate</h2>
+      <h2 className="font-semibold text-3xl md:text-4xl mb-12">10+ Experience</h2>
+      <h2 className="font-semibold text-3xl md:text-4xl mb-12">3+ Volunteer</h2>
+        {/* <ul>
           <li className="mb-2">
             <h3 className="font-medium text-xl">Get my Resume</h3>
           </li>
-        </ul>
+        </ul> */}
       </section>
 
       <div className="flex space-x-4 mt-4">
