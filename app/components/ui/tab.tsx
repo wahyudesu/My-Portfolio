@@ -34,12 +34,12 @@ const Tabslide = ({ onTabChange, initialTab }: TabslideProps) => {
   };
 
   return (
-    <div className="flex relative mb-2 h-12 rounded-3xl border border-black/40 px-2 backdrop-blur-sm">
+    <div className="flex relative mb-2 h-12 border border-black/40 backdrop-blur-sm">
       <span
-        className="absolute bottom-0 top-0 flex overflow-hidden rounded-3xl py-2 transition-all duration-400"
+        className="absolute bottom-0 top-0 flex overflow-hidden py-2 transition-all duration-400"
         style={{ left: tabUnderlineLeft, width: tabUnderlineWidth }}
       >
-        <span className="h-full w-full rounded-3xl bg-gray-200/30" />
+        <span className="h-full w-full rounded-lg bg-gray-200/30" />
       </span>
 
       {allTabs.map((tab, index) => (
@@ -50,7 +50,7 @@ const Tabslide = ({ onTabChange, initialTab }: TabslideProps) => {
           }}
           className={`${
             activeTabIndex === index ? "" : "hover:text-neutral-300"
-          } my-auto cursor-pointer select-none rounded-full px-4 text-center font-light text-white`}
+          } my-auto cursor-pointer select-none rounded-full px-4 py-2 text-center font-light text-white`}
           onClick={() => handleTabClick(index)}
         >
           {tab.name}

@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { badgeVariants } from "app/components/ui/badge";
 
 interface Post {
   title: string;
@@ -31,7 +32,7 @@ export const BlogPosts: React.FC<BlogPostsProps> = ({ posts }) => (
           {post.tags.map((tag, idx) => (
             <span
               key={idx}
-              className="bg-blue-500 hover:bg-blue-400 px-2 py-0.5 rounded-md text-sm mr-2 mb-2"
+              className={`${badgeVariants({ variant: "outline" })} mr-2`} // Using badgeVariants for styling and adding margin
             >
               {tag}
             </span>
