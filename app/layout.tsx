@@ -10,13 +10,13 @@ import { baseUrl } from "./sitemap";
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Wahyu Ikbal Maulana — Fullstack Developer",
+    default: "Wahyu Ikbal Maulana — Data Analyst",
     template: "%s | Wahyu Ikbal Maulana",
   },
-  description: "19 year old apprentice fullstack developer based in Cornwall.",
+  description: "20 year old data science student in Surabaya.",
   openGraph: {
     title: {
-      default: "Wahyu Ikbal Maulana — Fullstack Developer",
+      default: "Wahyu Ikbal Maulana — Data Analyst",
       template: "%s | Wahyu Ikbal Maulana",
     },
     images: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
       },
     ],
     description:
-      "19 year old apprentice fullstack developer based in Cornwall, United Kingdom.",
+      "20 year old data science student in Surabaya.",
     url: baseUrl,
     siteName: "Wahyu Ikbal Maulana",
     locale: "en_US",
@@ -34,11 +34,11 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: {
-      default: "Wahyu Ikbal Maulana — Fullstack Developer",
+      default: "Wahyu Ikbal Maulana — Data Analyst",
       template: "%s | Wahyu Ikbal Maulana",
     },
     description:
-      "19 year old apprentice fullstack developer based in Cornwall, United Kingdom.",
+      "20 year old data science student in Surabaya.",
     images: ["/ogimage.png"],
   },
   robots: {
