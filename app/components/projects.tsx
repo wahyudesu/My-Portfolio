@@ -48,8 +48,8 @@ export default function Projects() {
                         </Badge>
                       </Link>
                     )}
-                    {project["source code"] && (
-                      <Link href={project["source code"]} target="_blank">
+                    {project.code && (
+                      <Link href={project.code} target="_blank">
                         <Badge className="flex gap-1.5 px-2 text-[11px]">
                           <img src="/icons/github_2.svg" alt="Code" width={12} height={12} />
                           Code

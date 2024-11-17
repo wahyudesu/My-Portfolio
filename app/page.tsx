@@ -165,7 +165,7 @@ export default function Page() {
                                 type="button"
                                 className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-xs px-3 py-1.5 dark:bg-blue-600 dark:hover:bg-blue-700"
                               >
-                                Follow
+                                Connect
                               </button>
                             </div>
                           </div>

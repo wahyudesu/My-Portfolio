@@ -1,10 +1,10 @@
 export interface ProjectType {
   slug: string;
   name: string;
-  blurImage: string;
-  image: string;
   description: string;
   technologies: string[];
-  url: string;
+  url?: string;
+  code?: string,
+  document?: string,
   publishedAt: string;
 }
