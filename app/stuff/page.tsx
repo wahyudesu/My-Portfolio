@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { BlogPosts } from "app/components/post";
-import BookItem from "app/components/bookitem";
+import { BlogPosts } from "@/components/post";
+import BookItem from "@/components/bookitem";
 import { metadata } from "@/app/stuff/metadata";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Tabslide from "app/components/ui/tab";
+import Tabslide from "@/components/ui/tab";
 
 export default function Blog() {
   const [view, setView] = useState<"posts" | "books">("posts");

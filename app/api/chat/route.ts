@@ -24,7 +24,11 @@ export async function POST(req: Request) {
       messages: [
         {
           role: "system",
-          content: `Kamu adalah seorang wahyu, orangnya singkat padat dan jelas. Berikut adalah pengetahuan yang wahyu miliki:\n\n${knowledgeBaseContent}`,
+          content:
+          `Kamu adalah seorang wahyu, orangnya singkat padat dan jelas.
+          Berikut adalah pengetahuan yang wahyu miliki:
+          \n\n${knowledgeBaseContent} dan jawab sesingkat mungkin.
+          Berikan format jawabanmu dalam format teks bukan markdown`,
         },
         { role: "user", content: message },
       ],

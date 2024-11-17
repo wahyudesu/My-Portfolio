@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { badgeVariants } from "app/components/ui/badge";
+import { badgeVariants } from "@/components/ui/badge";
 import NumberTicker from "@/components/ui/number-ticker";
 
 export default function Resume() {

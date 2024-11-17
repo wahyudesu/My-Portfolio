@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { badgeVariants } from "app/components/ui/badge";
+import { badgeVariants } from "@/components/ui/badge";
 
 interface Post {
   title: string;

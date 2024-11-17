@@ -1,4 +1,4 @@
-import DotPattern from "app/components/ui/dot-pattern";
+import DotPattern from "@/components/ui/dot-pattern";
 import { cn } from "lib/utils";
 
 export default function NotFound() {

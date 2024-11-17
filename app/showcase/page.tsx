@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Projects from "app/components/projects";
+import Projects from "@/components/projects";
 import Link from "next/link";
-import { badgeVariants } from "app/components/ui/badge"
+import { badgeVariants } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
   title: "Showcase",

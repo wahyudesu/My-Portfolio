@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import Github from "../../public/icons/github.svg";
-import LinkedIn from "../../public/icons/linkedin.svg";
+import Github from "../public/icons/github.svg";
+import LinkedIn from "../public/icons/linkedin.svg";
 
 export default function Footer() {
   return (

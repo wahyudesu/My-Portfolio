@@ -2,11 +2,11 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Technologies from "app/components/technologies";
-import { DotPattern } from "app/components/ui/dot-pattern";
+import Technologies from "@/components/technologies";
+import { DotPattern } from "@/components/ui/dot-pattern";
 import { cn } from "lib/utils";
-import Aos from "app/components/aos";
-import { TextGenerateEffect } from "app/components/ui/text-generate-effect";
+import Aos from "@/components/aos";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 
