@@ -195,7 +195,7 @@ export default function Page() {
                                 <span>Followers</span>
                               </a>
                             </li>
-                          </ul>?
+                          </ul>
                         </div>
                       )}
                     </div>
@@ -206,7 +206,7 @@ export default function Page() {
                       className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                     >
                       Follow Instagram
-                    </a>
+                    </a> 
                   </li>
                   <li>
                     <a

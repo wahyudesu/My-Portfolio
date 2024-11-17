@@ -1,10 +1,6 @@
 import { NextResponse } from "next/server";
 import { Groq } from "groq-sdk";
-// import { createGroq } from '@ai-sdk/groq';
-
-// const groq = createGroq({
-//     apiKey: process.env.GROQ_API_KEY as string,
-// });
+import knowledge_base from "app/json/knowledge_base.json";  // Importing the knowledge base JSON
 
 const groq = new Groq({
   apiKey: process.env.GROQ_API_KEY,
@@ -21,9 +17,15 @@ export async function POST(req: Request) {
       );
     }
 
+    // Incorporating the knowledge base into the system message
+    const knowledgeBaseContent = knowledge_base ? JSON.stringify(knowledge_base) : "";
+
     const chatCompletion = await groq.chat.completions.create({
       messages: [
-        { role: "system", content: "Berikan jawaban dalam bahasa Indonesia. Singkat padat dan jelas" },
+        {
+          role: "system",
+          content: `Kamu adalah seorang wahyu, orangnya singkat padat dan jelas. Berikut adalah pengetahuan yang wahyu miliki:\n\n${knowledgeBaseContent}`,
+        },
         { role: "user", content: message },
       ],
       model: "llama-3.1-70b-versatile",
