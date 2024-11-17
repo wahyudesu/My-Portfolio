@@ -170,10 +170,10 @@ export default function Page() {
                             </div>
                           </div>
                           <p className="text-base font-semibold text-gray-900 dark:text-white">
-                            <a href="#">Jese Leos</a>
+                            <a href="#">Wahyu Ikbal Maulana</a>
                           </p>
                           <p className="text-sm font-normal mb-3">
-                            <a href="#" className="hover:underline">@jeseleos</a>
+                            <a href="#" className="hover:underline">@wahyuikbalmaulana</a>
                           </p>
                           <p className="mb-4 text-sm">
                             Open-source contributor. Building{" "}
