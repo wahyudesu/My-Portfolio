@@ -22,9 +22,13 @@ export async function POST(req: Request) {
     }
 
     const chatCompletion = await groq.chat.completions.create({
-        messages: [{role: "user", content: message}],
-        model: "llama-3.1-70b-versatile",
-    })
+      messages: [
+        { role: "system", content: "Berikan jawaban dalam bahasa Indonesia. Singkat padat dan jelas" },
+        { role: "user", content: message },
+      ],
+      model: "llama-3.1-70b-versatile",
+    });
+    
     const response = chatCompletion.choices[0].message.content;
     
     return NextResponse.json({ response: response });

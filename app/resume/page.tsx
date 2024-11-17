@@ -31,14 +31,14 @@ export default function Resume() {
         <span className={badgeVariants({ variant: "outline" })}>Artificial Intelligence</span>
         <span className={badgeVariants({ variant: "outline" })}>Data analysis</span>
         <span className={badgeVariants({ variant: "outline" })}>UI/UX</span>
-
       </div>
-      <div className="flex gap-2 mt-2 mb-8">
+      <div className="flex items-start content-around gap-2 flex-wrap mt-2 mb-8">
         <span className={badgeVariants({ variant: "outline" })}>Problem Solving</span>
         <span className={badgeVariants({ variant: "outline" })}>Management</span>
         <span className={badgeVariants({ variant: "outline" })}>Teamwork</span>
         <span className={badgeVariants({ variant: "outline" })}>Project Management</span>
       </div>
+
       
       <section>
         <h2 className="font-semibold text-3xl md:text-4xl mb-12">
