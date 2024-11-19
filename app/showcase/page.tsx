@@ -33,9 +33,9 @@ export default function Showcase() {
         profile.
       </span>
       <div className="flex gap-2 mt-4">
-        <Link href="#" className={badgeVariants({ variant: "outline" })}> Github </Link>
-        <Link href="#" className={badgeVariants({ variant: "outline" })}> Hugging Face </Link>
-        <Link href="#" className={badgeVariants({ variant: "outline" })}> Kaggle </Link>
+        <Link href="https://github.com/wahyudesu" className={badgeVariants({ variant: "outline" })}> Github </Link>
+        <Link href="https://huggingface.co/wahyudesu" className={badgeVariants({ variant: "outline" })}> Hugging Face </Link>
+        <Link href="https://www.kaggle.com/wahyuikbalmaulana" className={badgeVariants({ variant: "outline" })}> Kaggle </Link>
       </div>
       <div className="my-8 lg:my-12">
         <Projects />

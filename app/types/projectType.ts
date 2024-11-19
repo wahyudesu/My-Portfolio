@@ -6,5 +6,5 @@ export interface ProjectType {
   url?: string;
   code?: string,
   document?: string,
-  publishedAt: string;
+  publishedAt?: string;
 }

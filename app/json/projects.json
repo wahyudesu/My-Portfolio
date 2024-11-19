@@ -3,21 +3,17 @@
     "slug": "Guess-The-Word-Game",
     "name": "Guess The Word game",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-    "technologies": [
-      "Streamlit",
-      "Vector Embeddings",
-      "Text Similarity"
-    ],
+    "technologies": ["Streamlit","Vector Embeddings","Text Similarity"],
     "url": "https://for-the-ocean.org/",
     "code": "fb.com",
     "document": "yt.com",
     "publishedAt": "2024-10-23"
   },
   {
-    "slug": "portfolio",
-    "name": "Portfolio",
-    "description": "My personal portfolio.",
-    "technologies": ["Next", "React", "TypeScript", "Tailwind", "Git"],
+    "slug": "personal website",
+    "name": "personal website",
+    "description": "My personal website for portfolioportfolio.",
+    "technologies": ["Next js", "Typescript", "Llama", "Tailwind"],
     "url": "https://whyikbal.vercel.app",
     "publishedAt": "2024-10-23"
   },
@@ -59,12 +55,105 @@
   {
     "slug": "Monitoring-Stunting-Webbapp",
     "name": "Monitoring Stunting Webapp",
-    "description": "For this project I worked on loading lottie animations into the WordPress theme, as they aren't natively supported. I also worked on the design of footer and other frontend areas.",
+    "description": "No description",
     "technologies": [
       "Streamlit",
       "Generative AI"
     ],
     "url": "https://1energy.uk/",
     "publishedAt": "2024-10-24"
+  },
+  {
+    "slug": "Malware-prediction-project",
+    "name": "Malware prediction project",
+    "description": "No description",
+    "technologies": [
+      "Machine learning",
+      "Ensemble"
+    ],
+    "code": "https://github.com/wahyudesu/Chatbot-Kelurahan-Keputih",
+    "paper": "",
+    "publishedAt": ""
+  },
+  {
+    "slug": "chatbot-kelurahan-keputih",
+    "name": "Chatbot Kelurahan Keputih",
+    "description": "No description",
+    "technologies": [
+      "Python",
+      "LLM",
+      "Telegram"
+    ],
+    "code": "https://github.com/wahyudesu/Chatbot-Kelurahan-Keputih",
+    "publishedAt": ""
+  },
+  {
+    "slug": "Life-expectancy-analysis",
+    "name": "Life expectancy analysis",
+    "description": "No description",
+    "technologies": [
+      "Python",
+      "LLM"
+    ],
+    "code": "",
+    "publishedAt": "",
+    "document": ""
+  },
+  {
+    "slug": "Anime-recommendation-web-app",
+    "name": "Anime recommendation web app",
+    "description": "Anime recommendation web app",
+    "technologies": [
+      "Next js",
+      "Machine learning"
+    ],
+    "code": "",
+    "publishedAt": ""
+  },
+  {
+    "slug": "forecasting-indonesia-renewable-energy",
+    "name": "Forecasting Indonesia renewable energy",
+    "description": "No description",
+    "technologies": [
+      "Python",
+      "Machine learning",
+      "ARIMA"
+    ],
+    "code": "",
+    "publishedAt": ""
+  },
+  {
+    "slug": "personal-blog",
+    "name": "Personal Blog ",
+    "description": "My personal website using Next js, MDX",
+    "technologies": [
+      "Next js",
+      "MDX"
+    ],
+    "code": "",
+    "publishedAt": ""
+  },
+  {
+    "slug": "dashboard-monitoring-agriculture-indonesia",
+    "name": "Dashboard monitoring agriculture Indonesia",
+    "description": "Dashboard monitoring agriculture Indonesia",
+    "technologies": [
+      "Tableau",
+      "Deep Learning"
+    ],
+    "code": "",
+    "publishedAt": ""
+  },
+  {
+    "slug": "personal-blog",
+    "name": "Personal Blog ",
+    "description": "My personal website using Next js, Magic UI, Groq",
+    "technologies": [
+      "Next js",
+      "Groq",
+      "Magic UI"
+    ],
+    "code": "",
+    "publishedAt": ""
   }
 ]

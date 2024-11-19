@@ -26,7 +26,13 @@ export default function Resume() {
       <p className="mb-4">
         A summary of my educational background, experiences, and skills. Download my resume to learn more about my journey.
       </p>
-      <h3 className="font-bold text-xl">My Skill</h3>
+      <h3 className="font-bold text-xl">Education</h3>
+      <div className="flex gap-2 mt-4">
+        <span className={badgeVariants({ variant: "outline" })}>Artificial Intelligence</span>
+        <span className={badgeVariants({ variant: "outline" })}>Data analysis</span>
+        <span className={badgeVariants({ variant: "outline" })}>UI/UX</span>
+      </div>
+      <h3 className="font-bold text-xl mt-4">Skills</h3>
       <div className="flex gap-2 mt-4">
         <span className={badgeVariants({ variant: "outline" })}>Artificial Intelligence</span>
         <span className={badgeVariants({ variant: "outline" })}>Data analysis</span>

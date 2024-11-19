@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { badgeVariants } from "@/components/ui/badge";
+import BlurFade from "@/components/ui/blur-fade";
 
 interface Post {
   title: string;
@@ -16,7 +17,7 @@ interface BlogPostsProps {
 export const BlogPosts: React.FC<BlogPostsProps> = ({ posts }) => (
   <div>
     {posts.map((post, index) => (
-      <div key={index} className="mb-6">
+      <BlurFade key={index} className="mb-6">
         <h2 className="text-2xl font-bold mb-2">
           <Link href={post.url} passHref legacyBehavior>
             <a
@@ -39,7 +40,7 @@ export const BlogPosts: React.FC<BlogPostsProps> = ({ posts }) => (
           ))}
         </div>
         <p>{post.description}</p>
-      </div>
+      </BlurFade>
     ))}
   </div>
 );

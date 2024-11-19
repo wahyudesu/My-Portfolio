@@ -76,7 +76,6 @@ export default function Blog() {
       description: "The pursuit of happiness and calmness in life",
     },
   ];
-  
 
   useEffect(() => {
     AOS.init({ duration: 50 });
