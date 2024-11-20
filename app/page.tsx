@@ -21,37 +21,16 @@ interface Item {
  
 let notifications = [
   {
-    name: "Payment received",
-    description: "Magic UI",
+    name: "Selamat datang",
+    description: "@wahyu_ikbal",
     time: "15m ago",
  
-    icon: "💸",
+    icon: "👋🏻",
     color: "#00C9A7",
-  },
-  {
-    name: "User signed up",
-    description: "Magic UI",
-    time: "10m ago",
-    icon: "👤",
-    color: "#FFB800",
-  },
-  {
-    name: "New message",
-    description: "Magic UI",
-    time: "5m ago",
-    icon: "💬",
-    color: "#FF3D71",
-  },
-  {
-    name: "New event",
-    description: "Magic UI",
-    time: "2m ago",
-    icon: "🗞️",
-    color: "#1E86FF",
-  },
+  }
 ];
 
-const Notification = ({ name, description, icon, color, time }: Item) => {
+const Notification = ({ name, description, icon, color, time, onClick }: Item & { onClick: () => void }) => {
   return (
     <figure
       className={cn(
@@ -63,6 +42,7 @@ const Notification = ({ name, description, icon, color, time }: Item) => {
         // dark styles
         "transform-gpu dark:bg-transparent dark:backdrop-blur-md dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]",
       )}
+      onClick={onClick}
     >
       <div className="flex flex-row items-center gap-3">
         <div
@@ -88,7 +68,7 @@ const Notification = ({ name, description, icon, color, time }: Item) => {
   );
 };
  
-notifications = Array.from({ length: 10 }, () => notifications).flat();
+notifications = Array.from({ length: 1 }, () => notifications).flat();
 
 function TypewriterEffectDemo() {
   const [startAnimation, setStartAnimation] = useState(false);
@@ -129,16 +109,34 @@ function TypewriterEffectDemo() {
 export default function Page() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isPopoverVisible, setIsPopoverVisible] = useState(false);
+  const [showNotifications, setShowNotifications] = useState(true);
   const baseUrl = "https://whyikbal.vercel.app";
 
   const toggleModal = () => setIsModalOpen(!isModalOpen);
   const closeModal = () => setIsModalOpen(false);
 
-  const showPopover = () => setIsPopoverVisible(true);
-  const hidePopover = () => setIsPopoverVisible(false);
+  // const showPopover = () => setIsPopoverVisible(true);
+  // const hidePopover = () => setIsPopoverVisible(false);
+
+  const handleNotificationClick = () => {
+    setShowNotifications(false);
+    setTimeout(() => {
+      setShowNotifications(true);
+    }, 100000000); // Show notifications again after 5 seconds
+  };
 
   return (
     <div>
+      {showNotifications && (
+        <div className="absolute">
+          <AnimatedList>
+            {notifications.map((item, idx) => (
+              <Notification {...item} key={idx} onClick={handleNotificationClick} />
+            ))}
+          </AnimatedList>
+        </div>
+      )}
+
       <div className="h-[calc(100vh-10rem)] flex flex-col justify-center">
         <h1 className="mb-2 text-6xl sm:text-7xl font-semibold tracking-tighter text-center">
           <TextGenerateEffect words="Wahyu Ikbal Maulana" />
@@ -219,65 +217,13 @@ export default function Page() {
                     <div className="relative">
                       <a
                         href="https://www.linkedin.com/in/wahyuikbalmaulana"
-                        onMouseEnter={showPopover}
-                        onMouseLeave={hidePopover}
+                        // onMouseEnter={showPopover}
+                        // onMouseLeave={hidePopover}
                         className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300"
                       >
                         Connect Linkedin
                       </a>
 
-                      {/* Popover */}
-                      {isPopoverVisible && (
-                        <div
-                          className="absolute z-10 p-3 inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600"
-                          style={{ top: "100%", left: 0 }}
-                        >
-                          <div className="flex items-center justify-between mb-2">
-                            <a href="#">
-                              <img
-                                className="w-10 h-10 rounded-full"
-                                src="/docs/images/people/profile-picture-1.jpg"
-                                alt="User Profile"
-                              />
-                            </a>
-                            <div>
-                              <button
-                                type="button"
-                                className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-xs px-3 py-1.5 dark:bg-blue-600 dark:hover:bg-blue-700"
-                              >
-                                Connect
-                              </button>
-                            </div>
-                          </div>
-                          <p className="text-base font-semibold text-gray-900 dark:text-white">
-                            <a href="#">Wahyu Ikbal Maulana</a>
-                          </p>
-                          <p className="text-sm font-normal mb-3">
-                            <a href="#" className="hover:underline">@wahyuikbalmaulana</a>
-                          </p>
-                          <p className="mb-4 text-sm">
-                            Open-source contributor. Building{" "}
-                            <a href="#" className="text-blue-600 dark:text-blue-500 hover:underline">
-                              flowbite.com
-                            </a>
-                            .
-                          </p>
-                          <ul className="flex text-sm">
-                            <li className="mr-2">
-                              <a href="#" className="hover:underline">
-                                <span className="font-semibold text-gray-900 dark:text-white">799</span>
-                                <span>Following</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#" className="hover:underline">
-                                <span className="font-semibold text-gray-900 dark:text-white">3,758</span>
-                                <span>Followers</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      )}
                     </div>
                   </li>
                   <li>
@@ -310,6 +256,7 @@ export default function Page() {
           </div>
         </div>
       )}
+      
       <div className="space-y-10 mt-14 lg:mt-19">
         <h2 className="text-2xl lg:text-3xl font-semibold tracking-tighter text-center sm:text-left">
           My experience
@@ -375,11 +322,6 @@ export default function Page() {
         </div>
       </div>
       <DotPattern className={cn("-z-10 opacity-50 [mask-image:radial-gradient(300px_circle_at_center,white,transparent)]")}/>
-      <AnimatedList>
-        {notifications.map((item, idx) => (
-          <Notification {...item} key={idx} />
-        ))}
-      </AnimatedList>
     </div>
   );
 }
