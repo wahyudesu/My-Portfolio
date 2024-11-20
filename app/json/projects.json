@@ -139,7 +139,8 @@
     "description": "Dashboard monitoring agriculture Indonesia",
     "technologies": [
       "Tableau",
-      "Deep Learning"
+      "Deep Learning",
+      "Forecasting"
     ],
     "code": "",
     "publishedAt": ""
