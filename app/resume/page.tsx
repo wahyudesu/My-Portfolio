@@ -26,6 +26,12 @@ export default function Resume() {
       <p className="mb-4">
         A summary of my educational background, experiences, and skills. Download my resume to learn more about my journey.
       </p>
+      <h3 className="font-bold text-xl">Education</h3>
+      <div className="flex gap-2 mt-4">
+      <p className="mb-4">
+        <strong>Politeknik Elektronika Negeri Surabaya</strong>, jurusan sains data. Sebelumnya, saya menempuh pendidikan di <strong>SMAN 8 Surabaya</strong>, jurusan IPA.
+      </p>
+      </div>
       <h3 className="font-bold text-xl">My Skill</h3>
       <div className="flex gap-2 mt-4">
         <span className={badgeVariants({ variant: "outline" })}>Artificial Intelligence</span>

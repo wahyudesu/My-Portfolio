@@ -12,7 +12,7 @@
   {
     "slug": "personal website",
     "name": "personal website",
-    "description": "My personal website for portfolioportfolio.",
+    "description": "My personal website .",
     "technologies": ["Next js", "Typescript", "Llama", "Tailwind"],
     "url": "https://whyikbal.vercel.app",
     "publishedAt": "2024-10-23"
@@ -29,22 +29,9 @@
     "publishedAt": "2024-10-24"
   },
   {
-    "slug": "ARIMA-Analysis-Energy-in-Indonesia",
-    "name": "ARIMA Analysis Energy in Indonesia",
-    "description": "Mintmech's design was an interesting challenge. I worked with the topography backgrounds and other design elements to create a unique look across multiple pages on the site.",
-    "technologies": [
-      "Python",
-      "Data Analysis",
-      "Time Series",
-      "ARIMA"
-    ],
-    "url": "https://mintmech.com/",
-    "publishedAt": "2024-10-24"
-  },
-  {
     "slug": "CNN-Rock-Scissor-Paper",
     "name": "CNN Rock Scissor Paper",
-    "description": "For this project I worked on loading lottie animations into the WordPress theme, as they aren't natively supported. I also worked on the design of footer and other frontend areas.",
+    "description": "Project submission dicoding machine learning untuk pemula",
     "technologies": [
       "Python",
       "Computer Vision"
@@ -55,30 +42,31 @@
   {
     "slug": "Monitoring-Stunting-Webbapp",
     "name": "Monitoring Stunting Webapp",
-    "description": "No description",
+    "description": "Competition project healthkaton ai 2024 kemenkes",
     "technologies": [
       "Streamlit",
-      "Generative AI"
+      "Generative AI",
+      "Neon tech"
     ],
-    "url": "https://1energy.uk/",
+    "url": "https://github.com/wahyudesu/healthkathon-ai",
     "publishedAt": "2024-10-24"
   },
   {
     "slug": "Malware-prediction-project",
     "name": "Malware prediction project",
-    "description": "No description",
+    "description": "Final project semester 3 machine learning, build project ...",
     "technologies": [
       "Machine learning",
       "Ensemble"
     ],
-    "code": "https://github.com/wahyudesu/Chatbot-Kelurahan-Keputih",
+    "code": "https://github.com/wahyudesu/",
     "paper": "",
     "publishedAt": ""
   },
   {
     "slug": "chatbot-kelurahan-keputih",
     "name": "Chatbot Kelurahan Keputih",
-    "description": "No description",
+    "description": "Is Pengmas project (pengabdian masyarakat) building a chatbot for document management in keputih urban village",
     "technologies": [
       "Python",
       "LLM",
@@ -90,10 +78,10 @@
   {
     "slug": "Life-expectancy-analysis",
     "name": "Life expectancy analysis",
-    "description": "No description",
+    "description": "Final project semester 1, statistic",
     "technologies": [
       "Python",
-      "LLM"
+      "streamlit"
     ],
     "code": "",
     "publishedAt": "",
@@ -107,28 +95,29 @@
       "Next js",
       "Machine learning"
     ],
-    "code": "",
+    "code": "https://github.com/mozaldy/wamonime",
     "publishedAt": ""
   },
   {
     "slug": "forecasting-indonesia-renewable-energy",
     "name": "Forecasting Indonesia renewable energy",
-    "description": "No description",
+    "description": "Final project semester 2 applied statistics to build forecasting for SDGs",
     "technologies": [
       "Python",
       "Machine learning",
       "ARIMA"
     ],
-    "code": "",
-    "publishedAt": ""
+    "code": "https://github.com/wahyudesu/ARIMA-Analysis-in-Energy-SDGs-7-Indonesia",
+    "publishedAt": "2024-08-20"
   },
   {
     "slug": "personal-blog",
     "name": "Personal Blog ",
-    "description": "My personal website using Next js, MDX",
+    "description": "My personal blog that here I can write freely",
     "technologies": [
       "Next js",
-      "MDX"
+      "Velite",
+      "Acernity UI"
     ],
     "code": "",
     "publishedAt": ""
@@ -136,25 +125,27 @@
   {
     "slug": "dashboard-monitoring-agriculture-indonesia",
     "name": "Dashboard monitoring agriculture Indonesia",
-    "description": "Dashboard monitoring agriculture Indonesia",
+    "description": "Invited in faculty research to build deep learning projects in the field of agriculture",
     "technologies": [
       "Tableau",
       "Deep Learning",
       "Forecasting"
     ],
     "code": "",
-    "publishedAt": ""
+    "publishedAt": "2024-11-21"
   },
   {
-    "slug": "personal-blog",
-    "name": "Personal Blog ",
-    "description": "My personal website using Next js, Magic UI, Groq",
+    "slug": "dashboard-d3js",
+    "name": "Dashboard d3js ",
+    "description": "Build dashboard for final project data visualization semester 3 using bolt.new",
     "technologies": [
-      "Next js",
-      "Groq",
-      "Magic UI"
+      "Vite",
+      "React",
+      "d3js",
+      "Magic UI",
+      "shdcn ui"
     ],
-    "code": "",
-    "publishedAt": ""
+    "code": "https://3323600056-wahyuikbalmaulana-dashboard-d3js.vercel.app",
+    "publishedAt": "2024-11-21"
   }
 ]
