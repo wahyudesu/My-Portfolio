@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, FormEvent, useRef } from "react";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { Input } from "@/components/ui/input";
+import { ScrollArea } from "@/app/components/ui/scroll-area";
+import { Input } from "@/app/components/ui/input";
 
 type Message = {
   id: string;

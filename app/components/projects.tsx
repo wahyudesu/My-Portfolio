@@ -1,7 +1,7 @@
 import allProjects from "app/json/projects.json";
-import { Card, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/cards";
-import { Badge } from "@/components/ui/badge"; // Import Badge
-import Aos from "@/components/aos";
+import { Card, CardHeader, CardTitle, CardDescription, CardFooter } from "@/app/components/cards";
+import { Badge } from "@/app/components/ui/badge"; // Import Badge
+import Aos from "@/app/components/aos";
 import Link from "next/link";
 
 export default function Projects() {
