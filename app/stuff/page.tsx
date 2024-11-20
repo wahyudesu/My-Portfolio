@@ -4,8 +4,7 @@ import { useEffect, useState } from "react";
 import { BlogPosts } from "@/components/post";
 import BookItem from "@/components/bookitem";
 import { metadata } from "@/app/stuff/metadata";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import Aos from "@/components/aos";
 import Tabslide from "@/components/ui/tab";
 
 export default function Blog() {
@@ -76,10 +75,6 @@ export default function Blog() {
       description: "The pursuit of happiness and calmness in life",
     },
   ];
-
-  useEffect(() => {
-    AOS.init({ duration: 50 });
-  }, []);
 
   const handleTabChange = (index: number) => {
     setView(index === 0 ? "posts" : "books");
