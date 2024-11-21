@@ -1,48 +1,40 @@
 [
   {
-    "slug": "Guess-The-Word-Game",
-    "name": "Guess The Word game",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-    "technologies": ["Streamlit","Vector Embeddings","Text Similarity"],
-    "url": "https://for-the-ocean.org/",
-    "code": "fb.com",
-    "document": "yt.com",
-    "publishedAt": "2024-10-23"
+    "slug": "dashboard-monitoring-agriculture-indonesia",
+    "name": "Dashboard monitoring agriculture Indonesia",
+    "description": "Invited in faculty research to build deep learning projects in the field of agriculture",
+    "technologies": [
+      "Tableau",
+      "Deep Learning",
+      "Forecasting"
+    ],
+    "code": "",
+    "publishedAt": "2024-11-21"
   },
   {
-    "slug": "personal website",
-    "name": "personal website",
-    "description": "My personal website .",
-    "technologies": ["Next js", "Typescript", "Llama", "Tailwind"],
+    "slug": "personal-website",
+    "name": "Personal website",
+    "description": "My personal website for portofolio with retrieval information chatbot about myself.",
+    "technologies": ["Next js", "Typescript", "Llama", "Tailwind", "Magic UI", "Acernity UI"],
     "url": "https://whyikbal.vercel.app",
-    "publishedAt": "2024-10-23"
+    "publishedAt": "2024-11-21"
   },
   {
-    "slug": "Pneumonia-Detection-Using-Chest-X-Ray-&-ML",
-    "name": "Pneumonia Detection Using Chest X-Ray & ML",
-    "description": "No description",
+    "slug": "personal-blog",
+    "name": "Personal Blog ",
+    "description": "My personal blog that here I can write freely",
     "technologies": [
-      "Computer Vision",
-      "Image Classification"
+      "Next js",
+      "Velite",
+      "Acernity UI"
     ],
-    "url": "https://breakthroughagenda.org/",
-    "publishedAt": "2024-10-24"
-  },
-  {
-    "slug": "CNN-Rock-Scissor-Paper",
-    "name": "CNN Rock Scissor Paper",
-    "description": "Project submission dicoding machine learning untuk pemula",
-    "technologies": [
-      "Python",
-      "Computer Vision"
-    ],
-    "url": "https://1energy.uk/",
-    "publishedAt": "2024-10-24"
+    "code": "https://www.wahyuikbal.blog",
+    "publishedAt": "2024-11-21"
   },
   {
     "slug": "Monitoring-Stunting-Webbapp",
     "name": "Monitoring Stunting Webapp",
-    "description": "Competition project healthkaton ai 2024 kemenkes",
+    "description": "Competition project healthkaton ai 2024 kemenkes (qualify for the preliminaries)",
     "technologies": [
       "Streamlit",
       "Generative AI",
@@ -54,7 +46,7 @@
   {
     "slug": "Malware-prediction-project",
     "name": "Malware prediction project",
-    "description": "Final project semester 3 machine learning, build project ...",
+    "description": "Final project semester 3 machine learning, focusing on developing a machine learning model to predict and classify malware using ensemble learning techniques. ",
     "technologies": [
       "Machine learning",
       "Ensemble"
@@ -62,6 +54,28 @@
     "code": "https://github.com/wahyudesu/",
     "paper": "",
     "publishedAt": ""
+  },
+  {
+    "slug": "Guess-The-Word-Game",
+    "name": "Guess The Word game",
+    "description": "Project Gemastik cabang teknologi gams.",
+    "technologies": ["Streamlit","Vector Embeddings","Text Similarity"],
+    "url": "",
+    "code": "",
+    "document": "",
+    "publishedAt": "2024-01-23"
+  },
+  {
+    "slug": "CNN-Rock-Scissor-Paper",
+    "name": "CNN Rock Scissor Paper",
+    "description": "Project submission dicoding machine learning untuk pemula",
+    "technologies": [
+      "Python",
+      "Tensorflow",
+      "Computer Vision"
+    ],
+    "url": "",
+    "publishedAt": "2024-10-24"
   },
   {
     "slug": "chatbot-kelurahan-keputih",
@@ -73,7 +87,18 @@
       "Telegram"
     ],
     "code": "https://github.com/wahyudesu/Chatbot-Kelurahan-Keputih",
-    "publishedAt": ""
+    "publishedAt": "2024-11-21"
+  },
+  {
+    "slug": "Pneumonia-Detection-Using-Chest-X-Ray-&-ML",
+    "name": "Pneumonia Detection Using Chest X-Ray & ML",
+    "description": "Computer vision using Google Teachable Machine",
+    "technologies": [
+      "Computer Vision",
+      "Image Classification"
+    ],
+    "url": "",
+    "publishedAt": "2024-10-24"
   },
   {
     "slug": "Life-expectancy-analysis",
@@ -90,7 +115,7 @@
   {
     "slug": "Anime-recommendation-web-app",
     "name": "Anime recommendation web app",
-    "description": "Anime recommendation web app",
+    "description": "Building fullstack anime recommendation with machine learning",
     "technologies": [
       "Next js",
       "Machine learning"
@@ -109,30 +134,6 @@
     ],
     "code": "https://github.com/wahyudesu/ARIMA-Analysis-in-Energy-SDGs-7-Indonesia",
     "publishedAt": "2024-08-20"
-  },
-  {
-    "slug": "personal-blog",
-    "name": "Personal Blog ",
-    "description": "My personal blog that here I can write freely",
-    "technologies": [
-      "Next js",
-      "Velite",
-      "Acernity UI"
-    ],
-    "code": "",
-    "publishedAt": ""
-  },
-  {
-    "slug": "dashboard-monitoring-agriculture-indonesia",
-    "name": "Dashboard monitoring agriculture Indonesia",
-    "description": "Invited in faculty research to build deep learning projects in the field of agriculture",
-    "technologies": [
-      "Tableau",
-      "Deep Learning",
-      "Forecasting"
-    ],
-    "code": "",
-    "publishedAt": "2024-11-21"
   },
   {
     "slug": "dashboard-d3js",

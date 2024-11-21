@@ -18,7 +18,7 @@ export default function Showcase() {
       <h1 className="mb-8 text-5xl md:text-6xl font-semibold tracking-tighter">
         Showcase
       </h1>
-      <span className="mb-4">
+      <span className="mb-4 leading-3">
         Here's an overview of the projects I've contributed to. These include a
         mix of personal initiatives and my work at Hiyield. All these projects
         are live and available for you to explore. Any in-development personal

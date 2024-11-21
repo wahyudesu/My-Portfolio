@@ -1,6 +1,6 @@
 import allProjects from "app/json/projects.json";
 import { Card, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/cards";
-import { Badge } from "@/components/ui/badge"; // Import Badge
+import { Badge } from "@/components/ui/badge";
 import Aos from "@/components/aos";
 import Link from "next/link";
 
@@ -11,14 +11,14 @@ export default function Projects() {
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
         {allProjects.map((project, index) => (
           <div key={index} data-aos="fade-up">
-            <Card className="flex flex-col overflow-hidden p-4 border border-gray-800 hover:shadow-lg transition-all duration-300 ease-out h-full shadow-md">
+            <Card className="flex flex-col overflow-hidden p-4 border border-gray-800 hover:bg-neutral-900 transition-all duration-300 ease-out h-full shadow-md">
               {/* Card Content */}
               <div className="flex-grow space-y-2">
                 <CardHeader>
-                  <CardTitle className="mb-2 text-lg">
+                  <CardTitle className="mb-2 text-xl">
                     {project.name}
                   </CardTitle>
-                  <CardDescription className="prose max-w-full text-pretty text-xs text-muted-foreground dark:prose-invert">
+                  <CardDescription className="prose max-w-full text-pretty text-sm text-muted-foreground dark:prose-invert">
                     {project.description}
                   </CardDescription>
                 </CardHeader>

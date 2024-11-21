@@ -23,7 +23,7 @@ let notifications = [
   {
     name: "Selamat datang",
     description: "@wahyu_ikbal",
-    time: "15m ago",
+    time: "Now",
  
     icon: "👋🏻",
     color: "#00C9A7",
@@ -89,9 +89,11 @@ function TypewriterEffectDemo() {
           options={{
             strings: [
               "Data Analyst",
-              "Full Stack Engineer",
+              "Full Stack Developer",
               "UI/UX Designer",
-              "AI Engineer"
+              "AI Engineer",
+              "Data Scientist",
+              "Data Engineer"
             ],
             autoStart: true,
             loop: true,
@@ -142,7 +144,7 @@ export default function Page() {
           <TextGenerateEffect words="Wahyu Ikbal Maulana" />
         </h1>
         <p className="mx-auto max-w-sm sm:max-w-md mb-2 text-center font-medium sm:text-xl">
-          I am a Data Science student at the top polytechnic in Southeast Asia.
+          I was a Data Science student at the number 1 best Polytechnic in Southeast Asia.
         </p>
         <Aos />
         <Link

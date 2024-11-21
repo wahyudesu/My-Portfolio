@@ -4,6 +4,10 @@ module.exports = {
     content: [],
   theme: {
   	extend: {
+		lineheight: {
+			'extra-loose': '2.5',
+        	'12': '3rem',
+		},
   		animation: {
   			ripple: 'ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite',
   			shine: 'shine var(--duration) infinite linear'

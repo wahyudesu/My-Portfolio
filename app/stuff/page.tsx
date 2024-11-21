@@ -7,23 +7,50 @@ import { metadata } from "@/app/stuff/metadata";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Tabslide from "@/components/ui/tab";
+import Link from "next/link";
+
 
 export default function Blog() {
   const [view, setView] = useState<"posts" | "books">("posts");
 
   const posts = [
     {
-      title: "Understanding Generative AI",
-      url: "https://medium.com/@yourusername/understanding-generative-ai",
+      title: "Kamu anak sains data? Kamu wajib tahu data version control",
+      url: "https://medium.com/himit-pens/kamu-anak-sains-data-kamu-wajib-tahu-data-version-control-ae25bf7b012c",
       description: "A deep dive into the fundamentals of generative AI.",
       tags: ["AI", "Machine Learning", "Generative AI"],
     },
     {
-      title: "Data Science in Marketing",
-      url: "https://medium.com/@yourusername/data-science-in-marketing",
+      title: "How to Think with Data and get insight",
+      url: "https://www.wahyuikbal.blog/blog/How-to-Think-with-Data",
+      description: "A deep dive into the fundamentals of generative AI.",
+      tags: ["AI", "Machine Learning", "Generative AI"],
+    },
+    {
+      title: "How to Learn Any Skills and Master Them Effectively - The Talent Code",
+      url: "https://www.wahyuikbal.blog/blog/How-to-learn-any-skills-and-master-them-effectively",
+      description: "A deep dive into the fundamentals of generative AI.",
+      tags: ["AI", "Machine Learning", "Generative AI"],
+    },
+    {
+      title: "Yang kudapat dari SKS Time series",
+      url: "https://medium.com/@wahyuikbal/yang-kudapat-dari-sks-time-series-forecasting-ec793eabb764",
       description: "How data science can enhance marketing strategies.",
       tags: ["Data Science", "Marketing", "Business"],
     },
+    {
+      title: "Understanding decomposition in Machine learning",
+      url: "https://medium.com/himit-pens/understanding-decomposition-in-machine-learning-f357a55a91e2",
+      description: "How data science can enhance marketing strategies.",
+      tags: ["Data Science", "Marketing", "Business"],
+    },
+    {
+      title: "Confusion Metrics: Apa itu Presisi, Recacll, dan Bagaimana Menginterpretasikannya.",
+      url: "https://medium.com/himit-pens/mengurai-metrics-apa-itu-presisi-recall-dan-bagaimana-menginterpretasikannya-a15e7f90411e",
+      description: "How data science can enhance marketing strategies.",
+      tags: ["Data Science", "Marketing", "Business"],
+    },
+
   ];
 
   const books = [
@@ -93,8 +120,21 @@ export default function Blog() {
       </h1>
       <p className="mb-4">
         {view === "posts"
-          ? "A collection of posts I've written about various topics. From tech to personal, I write about what interests me."
-          : "Explore my favorite books that have shaped my perspective and inspired my journey. I hope you find them as interesting as I do."}
+          ? <span> "A collection of posts I've written about various topics. From tech to personal, I write about what interests me. You can also go to {" "} <Link
+          href="https://medium.com/@wahyuikbal"
+          target="_blank"
+          className="text-blue-500 underline"
+        >
+          my medium
+        </Link>{" "} or {' '}<Link
+          href="https://github.com/wahyudesu"
+          target="_blank"
+          className="text-blue-500 underline"
+        >
+          my personal blog
+        </Link>{" "}
+        </span>
+          : <span> "Explore my favorite books that have shaped my perspective and inspired my journey. I hope you find them as interesting as I do." </span>}
       </p>
 
       <Tabslide onTabChange={handleTabChange} initialTab={view === "posts" ? 0 : 1} />

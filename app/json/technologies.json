@@ -1,7 +1,7 @@
 [
   {
     "icon": "icons/figma.svg",
-    "highlight": "bg-red-300/20",
+    "highlight": "bg-slate-400/20",
     "name": "Figma",
     "type": "Design Software"
   },
@@ -19,13 +19,13 @@
   },
   {
     "icon": "icons/git.svg",
-    "highlight": "bg-red-400/20",
+    "highlight": "bg-slate-400/20",
     "name": "Git",
     "type": "Version Control"
   },
   {
     "icon": "icons/python.svg",
-    "highlight": "bg-yellow-300/20",
+    "highlight": "bg-slate-400/20",
     "name": "Python",
     "type": "Language"
   },
@@ -37,7 +37,7 @@
   },
   {
     "icon": "icons/pytorch.svg",
-    "highlight": "bg-red-300/20",
+    "highlight": "bg-slate-400/20",
     "name": "Pytorch",
     "type": "Deep Learning"
   },
@@ -49,7 +49,7 @@
   },
   {
     "icon": "icons/hf.svg",
-    "highlight": "bg-yellow-300/20",
+    "highlight": "bg-slate-400/20",
     "name": "Hugging Face",
     "type": "LLM"
   },
@@ -73,20 +73,26 @@
   },
   {
     "icon": "icons/grafana.svg",
-    "highlight": "bg-red-300/20",
+    "highlight": "bg-slate-400/20",
     "name": "Grafana",
     "type": "Data Visualization"
   },
   {
     "icon": "icons/d3.svg",
-    "highlight": "bg-red-300/20",
+    "highlight": "bg-slate-400/20",
     "name": "d3",
     "type": "Data Visualization"
   },
   {
     "icon": "icons/powerbi.svg",
-    "highlight": "bg-red-300/20",
+    "highlight": "bg-slate-400/20",
     "name": "Power BI",
+    "type": "Data Visualization"
+  },
+  {
+    "icon": "icons/Apache_Airflow.svg",
+    "highlight": "bg-slate-400/20",
+    "name": "Apache Airflow",
     "type": "Data Visualization"
   }
 ]
