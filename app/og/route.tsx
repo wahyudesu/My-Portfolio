@@ -14,7 +14,7 @@ export function GET(request: Request) {
         tw={`flex flex-col w-full h-full items-center justify-center bg-[#0c0c0c] text-[#e2e8f0] ${figtree.className}`}
       >
         <h3 tw="absolute top-10 left-10 text-xl font-semibold">
-          jakemackie.co.uk
+          Wahyu Ikbal
         </h3>
         <div tw="flex flex-col">
           <div tw="relative mx-auto flex flex-col max-w-xl p-10 tracking-tight text-center">

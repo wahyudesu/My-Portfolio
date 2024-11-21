@@ -16,6 +16,7 @@ import 'react-social-icons/linkedin'
 import 'react-social-icons/instagram'
 import 'react-social-icons/youtube'
 import 'react-social-icons/behance'
+import { CircleArrowOutUpRight } from 'lucide-react';
 
 interface Item {
   name: string;
@@ -73,7 +74,7 @@ const Notification = ({ name, description, icon, color, time, onClick }: Item & 
     </figure>
   );
 };
- 
+
 notifications = Array.from({ length: 1 }, () => notifications).flat();
 
 function TypewriterEffectDemo() {
@@ -214,16 +215,24 @@ export default function Page() {
                   Connect with me on any of the following platforms:
                 </p>
                 <ul className="my-4 space-y-3">
-                  <li>
-                    <a
-                      href="mailto:why.ikbal@gmail.com"
-                      className="gap-2 flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                <li>
+                  <a
+                    href="mailto:why.ikbal@gmail.com"
+                    className="group relative gap-2 flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                  >
+                    <SocialIcon
+                      url="www.email.com"
+                      style={{ width: '28px', height: '28px' }}
+                    />
+                    Email Me
+                    <span
+                      className="absolute right-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300"
                     >
-                      {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 mr-3" fill="none"><path fill="#CFD8DC" d="M443.499 417.941l-181.333-128c-3.689-2.606-8.62-2.606-12.309 0l-181.333 128c-2.837 1.999-4.525 5.254-4.523 8.725v10.667C64 443.224 68.776 448 74.667 448h362.667c5.891 0 10.667-4.776 10.667-10.667v-10.667c-.006-3.8-1.685-7.055-4.514-9.059z"></path><path fill="#FAFAFA" d="M262.165 289.941l-181.333-128c-4.807-3.405-11.465-2.268-14.87 2.539-1.281 1.808-1.967 3.97-1.962 6.186v256c-.012 5.891 4.755 10.676 10.646 10.688 2.216.004 4.378-.682 6.186-1.962l181.333-128c4.813-3.397 5.961-10.052 2.564-14.865-.702-.995-1.569-1.862-2.564-2.564V289.941z"></path><path fill="#EEEEEE" d="M442.24 161.195c-3.546-1.812-7.802-1.525-11.072.747l-181.333 128c-4.813 3.397-5.961 10.052-2.564 14.865.702.995 1.569 1.862 2.564 2.564l181.333 128c4.807 3.405 11.465 2.268 14.87-2.539 1.277-1.802 1.962-3.956 1.962-6.165v-256c0-4.515-2.221-8.168-5.76-10.001z"></path><path fill="#ECEFF1" d="M468.8 71.339C467.362 66.96 463.275 64 458.667 64H53.333c-5.891 0-10.667 4.776-10.667 10.667 0 3.357 1.581 6.519 4.267 8.533L249.6 232.533c3.762 2.77 8.889 2.77 12.651 0L464.917 83.2c3.714-2.705 5.278-7.484 3.883-11.861z"></path><path fill="#F44336" d="M458.667 64c-2.308 0-4.554.749-6.4 2.133L256 210.752 59.733 66.133C57.887 64.749 55.641 64 53.333 64 23.878 64 0 87.878 0 117.333v277.333C0 424.122 23.878 448 53.333 448h21.333c5.891 0 10.667-4.776 10.667-10.667v-246.08l164.501 116.139c3.689 2.606 8.62 2.606 12.309 0l164.523-116.139v246.08c0 5.891 4.776 10.667 10.667 10.667h21.333C488.122 448 512 424.122 512 394.667V117.333C512 87.878 488.122 64 458.667 64z"></path></svg> */}
-                      <SocialIcon url="www.email.com" style={{ width: '28px', height: '28px' }} />
-                      Email Me
-                    </a>
-                  </li>
+                      <CircleArrowOutUpRight size={15} strokeWidth={2} />
+                    </span>
+                  </a>
+                </li>
+
                   <li>
                     <div className="relative">
                       <a
