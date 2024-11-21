@@ -120,7 +120,7 @@ export default function Blog() {
       </h1>
       <p className="mb-4">
         {view === "posts"
-          ? <span> "A collection of posts I've written about various topics. From tech to personal, I write about what interests me. You can also go to {" "} <Link
+          ? <span> A collection of posts I've written about various topics. From tech to personal, I write about what interests me. You can also go to {" "} <Link
           href="https://medium.com/@wahyuikbal"
           target="_blank"
           className="text-blue-500 underline"

@@ -10,16 +10,12 @@ import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import { AnimatedList } from "../components/ui/animated-list";
-import { SocialIcon } from 'react-social-icons/component'
+import { SocialIcon } from 'react-social-icons'
 import 'react-social-icons/email'
 import 'react-social-icons/linkedin'
 import 'react-social-icons/instagram'
 import 'react-social-icons/youtube'
 import 'react-social-icons/behance'
-
-
-
-
 
 interface Item {
   name: string;
