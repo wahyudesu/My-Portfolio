@@ -32,6 +32,16 @@
     "publishedAt": "2024-11-21"
   },
   {
+    "slug": "document-summarization",
+    "name": "Document summarization ",
+    "description": "Final project semester 3 Text Mining",
+    "technologies": [
+      "LLM"
+    ],
+    "code": "",
+    "publishedAt": "2024-11-21"
+  },
+  {
     "slug": "Monitoring-Stunting-Webbapp",
     "name": "Monitoring Stunting Webapp",
     "description": "Competition project healthkaton ai 2024 kemenkes (qualify for the preliminaries)",
