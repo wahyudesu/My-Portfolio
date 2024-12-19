@@ -3,6 +3,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardFooter } from "@/comp
 import { Badge } from "@/components/ui/badge";
 import Aos from "@/components/aos";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -13,6 +14,13 @@ export default function Projects() {
           <div key={index} data-aos="fade-up">
             <Card className="flex flex-col overflow-hidden p-4 border border-gray-800 hover:bg-neutral-900 transition-all duration-300 ease-out h-full shadow-md">
               {/* Card Content */}
+              {/* <Image className="mb-4"
+                width={500}
+                height={100}
+                quality={75}
+                src={"/ogimage.png"}
+                alt={""}>
+              </Image> */}
               <div className="flex-grow space-y-2">
                 <CardHeader>
                   <CardTitle className="mb-2 text-xl">

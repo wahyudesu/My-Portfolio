@@ -21,14 +21,15 @@
   },
   {
     "slug": "personal-blog",
-    "name": "Personal Blog ",
+    "name": "Personal Blog Website",
     "description": "My personal blog that here I can write freely",
     "technologies": [
       "Next js",
       "Velite",
       "Acernity UI"
     ],
-    "code": "https://www.wahyuikbal.blog",
+    "url": "https://www.wahyuikbal.blog",
+    "code": "https://github.com/wahyudesu/Personal-Blog",
     "publishedAt": "2024-11-21"
   },
   {
@@ -36,9 +37,12 @@
     "name": "Document summarization ",
     "description": "Final project semester 3 Text Mining",
     "technologies": [
+      "Next js",
+      "Tailwind CSS",
+      "Llama 3",
       "LLM"
     ],
-    "code": "",
+    "code": "https://github.com/wahyudesu/Next-js-PDF-Summarization/",
     "publishedAt": "2024-11-21"
   },
   {
@@ -50,7 +54,8 @@
       "Generative AI",
       "Neon tech"
     ],
-    "url": "https://github.com/wahyudesu/healthkathon-ai",
+    "url": "https://stuntron.streamlit.app",
+    "code": "https://github.com/wahyudesu/healthkathon-ai",
     "publishedAt": "2024-10-24"
   },
   {
