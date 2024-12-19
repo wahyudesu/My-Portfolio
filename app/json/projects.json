@@ -8,7 +8,7 @@
       "Deep Learning",
       "Forecasting"
     ],
-    "code": "",
+    "paper": "",
     "publishedAt": "2024-11-21"
   },
   {
@@ -16,7 +16,8 @@
     "name": "Personal website",
     "description": "My personal website for portofolio with retrieval information chatbot about myself.",
     "technologies": ["Next js", "Typescript", "Llama", "Tailwind", "Magic UI", "Acernity UI"],
-    "url": "https://whyikbal.vercel.app",
+    "url": "https://www.wahyuikbal.web.id",
+    "code": "https://github.com/wahyudesu/My-Portofolio",
     "publishedAt": "2024-11-21"
   },
   {
@@ -89,7 +90,7 @@
       "Tensorflow",
       "Computer Vision"
     ],
-    "url": "",
+    "code": "",
     "publishedAt": "2024-10-24"
   },
   {
@@ -101,7 +102,6 @@
       "LLM",
       "Telegram"
     ],
-    "code": "https://github.com/wahyudesu/Chatbot-Kelurahan-Keputih",
     "publishedAt": "2024-11-21"
   },
   {
@@ -148,12 +148,13 @@
       "ARIMA"
     ],
     "code": "https://github.com/wahyudesu/ARIMA-Analysis-in-Energy-SDGs-7-Indonesia",
-    "publishedAt": "2024-08-20"
+    "publishedAt": "2024-08-20",
+    "paper":""
   },
   {
     "slug": "dashboard-d3js",
     "name": "Dashboard d3js ",
-    "description": "Build dashboard for final project data visualization semester 3 using bolt.new",
+    "description": "Build dashboard for final project data visualization semester 3",
     "technologies": [
       "Vite",
       "React",

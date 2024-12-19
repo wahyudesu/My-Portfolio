@@ -12,7 +12,6 @@ export interface ProjectType {
   publishedAt: string;
 }
 
-
 export function getProject(key: string): ProjectType | undefined {
   return allProjects.find((project) => project.slug === key);
 }
